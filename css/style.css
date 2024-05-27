@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.whatsapp-pc {
+  visibility: hidden;
+  position: fixed;
+  color: #25d366;
+  font-size: 40px;
+  right: 20px;
+  bottom: 60px;
+  z-index: 4;
+}
+
+.whatsapp-mobil {
+  visibility: visible;
+  position: fixed;
+  color: #25d366;
+  font-size: 40px;
+  right: 20px;
+  bottom: 60px;
+  z-index: 4;
+}
+
+@media (min-width: 768px) {
+  .whatsapp-pc {
+    font-size: 60px;
+    visibility: visible;
+  }
+  .whatsapp-mobil {
+    visibility: hidden;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .whatsapp-pc {
+    font-size: 50px;
+    visibility: hidden;
+  }
+  .whatsapp-mobil {
+    visibility: visible;
+  }
+}
+header {
+  background-image: url(../img/backgruond-header.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  filter: grayscale(0.6);
+}
+
+.social-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  letter-spacing: 5px;
+  padding-top: 15px;
+  font-size: 18px;
+}
+.social-icon a {
+  margin-right: 15px;
+}
+.social-icon .fa-square-facebook {
+  color: white;
+}
+.social-icon .fa-square-facebook:hover {
+  color: blue;
+}
+.social-icon .fa-square-instagram {
+  color: white;
+}
+.social-icon .fa-square-instagram:hover {
+  color: purple;
+}
+
+.logo-header {
+  margin-left: 20px;
+  display: flex;
+  justify-content: start;
+}
+
+.logo-index {
+  width: 100px;
+}/*# sourceMappingURL=style.css.map */
