@@ -26,7 +26,7 @@
 
 @media (min-width: 768px) {
   .whatsapp-pc {
-    font-size: 60px;
+    font-size: 50px;
     visibility: visible;
   }
   .whatsapp-mobil {
@@ -52,11 +52,11 @@ header {
   filter: grayscale(0.5);
 }
 
+/*redes sociales*/
 .social-icon {
   display: flex;
   flex-direction: row;
   justify-content: end;
-  letter-spacing: px;
   padding-top: 15px;
   font-size: 22px;
 }
@@ -64,26 +64,55 @@ header {
   margin-right: 15px;
 }
 .social-icon .fa-square-facebook {
-  color: gray;
+  color: black;
 }
 .social-icon .fa-square-facebook:hover {
   color: blue;
 }
 .social-icon .fa-square-instagram {
-  color: gray;
+  color: black;
 }
 .social-icon .fa-square-instagram:hover {
   color: purple;
 }
 
+@media (min-width: 768px) {
+  .social-icon a {
+    font-size: 26px;
+    margin-right: 45px;
+    margin-left: -25px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .social-icon a {
+    font-size: 24px;
+    margin-right: 40px;
+    margin-left: -20px;
+  }
+}
+/*fin redes sociales*/
 .logo-header {
   display: flex;
   justify-content: start;
 }
 
 .logo-index {
-  width: 120px;
-  margin-left: 15px;
+  width: 100px;
+  margin-left: 25px;
 }
 
+.logo-index2 {
+  width: 110px;
+  visibility: hidden;
+}
+
+@media (min-width: 768px) {
+  .logo-index {
+    visibility: hidden;
+  }
+  .logo-index2 {
+    visibility: visible;
+    margin-left: -100px;
+  }
+}
 /*fin header*//*# sourceMappingURL=style.css.map */

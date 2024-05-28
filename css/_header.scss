@@ -15,6 +15,20 @@ header {
     justify-content: start;
 }  
 .logo-index {
-    width: 120px;
-    margin-left: 15px;
+    width: 100px;
+    margin-left: 25px;
 }
+.logo-index2 {
+    width: 110px;
+    visibility: hidden;
+}
+@media (min-width: 768px) {
+    .logo-index {
+        visibility: hidden;
+    }
+    .logo-index2 {
+        visibility: visible;
+        margin-left: -100px;
+    }
+}
+
