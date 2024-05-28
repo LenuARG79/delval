@@ -1,0 +1,34 @@
+.social-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    letter-spacing: px;
+    padding-top: 15px;
+    font-size: 22px;
+    a {
+        margin-right: 15px;
+    }
+    .fa-square-facebook {
+        color: gray;
+        &:hover {
+            color: blue;
+        }
+    }
+    .fa-square-instagram {
+        color: gray;
+        &:hover {
+            color: purple;
+        }
+    }
+
+@media (min-width: 768px) {
+        .social-icon a {
+            margin-right: 45px;
+        }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+        .social-icon a {
+            margin-right: 30px;
+    }
+}

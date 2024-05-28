@@ -42,45 +42,48 @@
     visibility: visible;
   }
 }
+/*header*/
 header {
   background-image: url(../img/backgruond-header.jpg);
   height: 100vh;
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
-  filter: grayscale(0.6);
+  filter: grayscale(0.5);
 }
 
 .social-icon {
   display: flex;
   flex-direction: row;
   justify-content: end;
-  letter-spacing: 5px;
+  letter-spacing: px;
   padding-top: 15px;
-  font-size: 18px;
+  font-size: 22px;
 }
 .social-icon a {
   margin-right: 15px;
 }
 .social-icon .fa-square-facebook {
-  color: white;
+  color: gray;
 }
 .social-icon .fa-square-facebook:hover {
   color: blue;
 }
 .social-icon .fa-square-instagram {
-  color: white;
+  color: gray;
 }
 .social-icon .fa-square-instagram:hover {
   color: purple;
 }
 
 .logo-header {
-  margin-left: 20px;
   display: flex;
   justify-content: start;
 }
 
 .logo-index {
-  width: 100px;
-}/*# sourceMappingURL=style.css.map */
+  width: 120px;
+  margin-left: 15px;
+}
+
+/*fin header*//*# sourceMappingURL=style.css.map */
