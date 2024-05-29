@@ -95,11 +95,20 @@
         text-decoration: none;
         justify-items: center;
         padding: 15px;
-        &:hover {
+        &::before {
+            content: "";
+            display: block;
+            width: 0px;
+            height: 3px;
+            background-color: black;
+            left: 0;
+            transition: all 0.3s;
+        }
+        &:hover::before {
             color: #5b5b5b;
-            border-bottom: 2px solid black;
-}
-}
+            width: 100%;
+        }
+    }
 }
 @media (min-width:576px) and (max-width:767px){
     .p-menu {
