@@ -6,19 +6,19 @@
     font-size: 22px;
     a {
         margin-right: 15px;
-    }
-    .fa-brand {
-        color: red;
-    }
-    
+    }    
     .fa-square-facebook {
+        color: white; 
+        text-shadow: 0px 0px 5px black ;
         &:hover {
-            color: blue;
+            color: lightskyblue;
         }
 }
     .fa-square-instagram {
+        color: white;
+        text-shadow: 0px 0px 5px black ;
         &:hover {
-            color: purple;
+            color: lightcoral;
         }
 }
 }
@@ -28,10 +28,7 @@
             font-size: 26px;
             margin-right: 45px;
             margin-left: -25px;
-        }
-        .fa-square-facebook {
-            color: white;
-        }
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -40,5 +37,5 @@
             font-size: 24px;
             margin-right: 40px;
             margin-left: -20px;
-}
+    }
 }

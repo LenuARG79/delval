@@ -4,7 +4,7 @@ header {
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
-    filter: grayscale(0.5);
+    opacity: 0.8;
 }
 /*redes sociales*/
 @import "_socialicon";
@@ -12,23 +12,18 @@ header {
 
 .logo-header {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
 }  
 .logo-index {
-    width: 100px;
+    width: 105px;
     margin-left: 25px;
+    margin-top: 10px;
 }
-.logo-index2 {
-    width: 110px;
-    visibility: hidden;
-}
+@import "_menu";
+
 @media (min-width: 768px) {
     .logo-index {
-        visibility: hidden;
-    }
-    .logo-index2 {
-        visibility: visible;
-        margin-left: -100px;
-    }
+        width: 120px;
+        margin-left: 35px;
 }
-
+}

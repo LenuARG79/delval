@@ -1,0 +1,108 @@
+#btn-menu {
+    display: none;
+}
+#btn-menu:checked + .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.icon-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 32px;
+}
+.fa-bars {
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    margin-top: 25px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.p-menu {
+    visibility: hidden;
+    font-size: 16px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+.container-menu {
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+.cont-menu {
+    width: 100%;
+    max-width: 250px;
+    height: 100vh;
+    background:#f8f8f8;
+    /*position: relative;*/
+    transition: all 0.5s ease;
+}
+.cont-menu nav {
+    transform: translateY(25%);
+}
+.cont-menu nav a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: #b4b4b4;
+    border-left: 4px solid transparent;
+    border-bottom: 1px solid #b4b4b4;
+    transition: all 0.5s ease;
+        &:hover { 
+            border-left: 4px solid black;
+            background: lightgray;
+}
+}
+.cont-menu label i{
+    font-size: 16px;
+    position: absolute;
+    right: 25px;
+    top: 30px;
+    color: white;
+    cursor: pointer;
+}
+.fa-x {
+    color: white;
+    text-shadow: 0px 0px 5px black ;
+    margin-right: 9px;
+    margin-top: 25px;
+}
+.menu-pc2 {
+    display: flex;
+    justify-content: end;
+    margin-right: 85px;
+    margin-top: -40px;
+}
+.menu-pc {
+    display: none;
+}
+@media (min-width:768px) {
+    .btn-menu {
+        display: none;
+}
+    .menu-pc {
+        display: block;
+}
+    .menu-pc nav a {
+        color: white;
+        text-shadow: 0px 0px 5px black;
+        text-decoration: none;
+        justify-items: center;
+        padding: 15px;
+        &:hover {
+            color: #5b5b5b;
+            border-bottom: 2px solid black;
+}
+}
+}
+@media (min-width:576px) and (max-width:767px){
+    .p-menu {
+        visibility: visible;
+    }
+}
