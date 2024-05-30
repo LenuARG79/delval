@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: black;
-}
-
 .whatsapp-pc {
   visibility: hidden;
   position: fixed;
@@ -47,13 +43,32 @@ body {
   }
 }
 /*header*/
-header {
+.header {
   background-image: url(../img/backgruond-header.jpg);
+  background-color: rgb(50, 50, 50);
+  background-blend-mode: soft-light;
   height: 100vh;
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
-  opacity: 0.8;
+}
+
+.background-menu {
+  background-color: black;
+  width: 100vw;
+  height: 12vh;
+  margin-top: 5px;
+}
+
+.h2-header {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  text-shadow: 0px 0px 5px black;
+  font-size: 20px;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 120px;
 }
 
 /*redes sociales*/
@@ -67,18 +82,20 @@ header {
 .social-icon a {
   margin-right: 15px;
 }
-.social-icon .fa-square-facebook {
+
+.fa-square-facebook {
   color: white;
   text-shadow: 0px 0px 5px black;
 }
-.social-icon .fa-square-facebook:hover {
+.fa-square-facebook:hover {
   color: lightskyblue;
 }
-.social-icon .fa-square-instagram {
+
+.fa-square-instagram {
   color: white;
   text-shadow: 0px 0px 5px black;
 }
-.social-icon .fa-square-instagram:hover {
+.fa-square-instagram:hover {
   color: lightcoral;
 }
 
@@ -103,9 +120,9 @@ header {
 }
 
 .logo-index {
-  width: 105px;
+  width: 90px;
   margin-left: 25px;
-  margin-top: 10px;
+  margin-top: px;
 }
 
 #btn-menu {
@@ -127,13 +144,14 @@ header {
 .fa-bars {
   color: white;
   text-shadow: 0px 0px 5px black;
-  margin-top: 25px;
+  margin-top: 15px;
   cursor: pointer;
   font-size: 20px;
 }
 
 .p-menu {
   visibility: hidden;
+  font-family: "Courier New", Courier, monospace;
   font-size: 16px;
   color: white;
   text-shadow: 0px 0px 5px black;
@@ -166,6 +184,7 @@ header {
 
 .cont-menu nav a {
   display: block;
+  font-family: "Courier New", Courier, monospace;
   text-decoration: none;
   padding: 10px;
   color: #b4b4b4;
@@ -174,7 +193,6 @@ header {
   transition: all 0.5s ease;
 }
 .cont-menu nav a:hover {
-  border-left: 4px solid black;
   background: lightgray;
 }
 
@@ -203,6 +221,7 @@ header {
 
 .menu-pc {
   display: none;
+  font-family: "Courier New", Courier, monospace;
 }
 
 @media (min-width: 768px) {
@@ -220,8 +239,7 @@ header {
     padding: 15px;
   }
   .menu-pc nav a:hover {
-    color: #5b5b5b;
-    border-bottom: 2px solid black;
+    width: 100%;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -233,6 +251,16 @@ header {
   .logo-index {
     width: 120px;
     margin-left: 35px;
+  }
+  .background-menu {
+    background-color: black;
+    height: 17vh;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .background-menu {
+    background-color: black;
+    height: 15vh;
   }
 }
 /*fin header*//*# sourceMappingURL=style.css.map */

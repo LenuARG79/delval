@@ -14,12 +14,13 @@
 .fa-bars {
     color: white;
     text-shadow: 0px 0px 5px black;
-    margin-top: 25px;
+    margin-top: 15px;
     cursor: pointer;
     font-size: 20px;
 }
 .p-menu {
     visibility: hidden;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
     color: white;
     text-shadow: 0px 0px 5px black;
@@ -48,14 +49,14 @@
 }
 .cont-menu nav a {
     display: block;
+    font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
     padding: 10px;
     color: #b4b4b4;
     border-left: 4px solid transparent;
     border-bottom: 1px solid #b4b4b4;
     transition: all 0.5s ease;
-        &:hover { 
-            border-left: 4px solid black;
+        &:hover {
             background: lightgray;
 }
 }
@@ -81,6 +82,7 @@
 }
 .menu-pc {
     display: none;
+    font-family: 'Courier New', Courier, monospace;
 }
 @media (min-width:768px) {
     .btn-menu {
@@ -95,19 +97,10 @@
         text-decoration: none;
         justify-items: center;
         padding: 15px;
-        &::before {
-            content: "";
-            display: block;
-            width: 0px;
-            height: 3px;
-            background-color: black;
-            left: 0;
-            transition: all 0.3s;
-        }
         &:hover {
             width: 100%;
         }
-    }
+}
 }
 @media (min-width:576px) and (max-width:767px){
     .p-menu {
