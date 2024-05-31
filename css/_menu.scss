@@ -93,12 +93,11 @@
 }
     .menu-pc nav a {
         color: white;
-        text-shadow: 0px 0px 5px black;
         text-decoration: none;
         justify-items: center;
         padding: 15px;
         &:hover {
-            width: 100%;
+            color: gray;
         }
 }
 }

@@ -53,8 +53,7 @@
 
 .background-menu {
   justify-content: center;
-  background-color: rgb(30, 30, 30);
-  background-blend-mode: soft-light;
+  background-color: black;
   width: 100vw;
   height: 55px;
   margin-top: 5px;
@@ -62,9 +61,9 @@
 
 .h2-header {
   color: white;
+  text-shadow: 3px 0px 0px black;
   font-family: "Courier New", Courier, monospace;
-  text-shadow: 0px 0px 5px black;
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
   padding-left: 15px;
   padding-right: 15px;
@@ -233,13 +232,12 @@
   }
   .menu-pc nav a {
     color: white;
-    text-shadow: 0px 0px 5px black;
     text-decoration: none;
     justify-items: center;
     padding: 15px;
   }
   .menu-pc nav a:hover {
-    width: 100%;
+    color: gray;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -255,6 +253,9 @@
   .background-menu {
     height: 66px;
   }
+  .h2-header {
+    font-size: 28px;
+  }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .background-menu {
@@ -262,6 +263,9 @@
   }
   .logo-index {
     width: 95px;
+  }
+  .h2-header {
+    font-size: 26px;
   }
 }
 /*fin header*//*# sourceMappingURL=style.css.map */
