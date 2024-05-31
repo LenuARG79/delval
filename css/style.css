@@ -45,8 +45,6 @@
 /*header*/
 .header {
   background-image: url(../img/backgruond-header.jpg);
-  background-color: rgb(50, 50, 50);
-  background-blend-mode: soft-light;
   height: 100vh;
   background-size: cover;
   background-position: right;
@@ -54,9 +52,11 @@
 }
 
 .background-menu {
-  background-color: black;
+  justify-content: center;
+  background-color: rgb(30, 30, 30);
+  background-blend-mode: soft-light;
   width: 100vw;
-  height: 12vh;
+  height: 55px;
   margin-top: 5px;
 }
 
@@ -249,18 +249,19 @@
 }
 @media (min-width: 768px) {
   .logo-index {
-    width: 120px;
+    width: 110px;
     margin-left: 35px;
   }
   .background-menu {
-    background-color: black;
-    height: 17vh;
+    height: 66px;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .background-menu {
-    background-color: black;
-    height: 15vh;
+    height: 61px;
+  }
+  .logo-index {
+    width: 95px;
   }
 }
 /*fin header*//*# sourceMappingURL=style.css.map */
