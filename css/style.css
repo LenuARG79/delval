@@ -311,47 +311,50 @@ hr {
   text-shadow: 0px 0px 8px #05B2DC;
   font-family: "Courier New", Courier, monospace;
   font-size: 20px;
-  /*margin-bottom: 30px;*/
+  margin-bottom: 30px;
 }
 
 .categorias {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(1, 120px);
+  grid-template-rows: repeat(1, 200px);
   margin-left: 5px;
   margin-right: 5px;
   grid-gap: 10px;
-  padding: 25px;
+  padding: 20px;
 }
 
-.categoria {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 120px;
-  height: 180px;
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px double #05B2DC;
+  background-color: #242222;
 }
 
-.espejos {
-  background-image: url(../img/espejos.jpg);
-  transition: all 0.5s;
-}
-.espejos:active {
-  width: 120px;
-  height: 100px;
-  background-size: contain;
-  transition: all 0.5s;
+.fa {
+  color: #05B2DC;
+  font-size: 80px;
 }
 
-.vanitorys {
-  background-image: url(../img/vanitorys.jpg);
-  transition: all 0.5s;
+.card-h3 {
+  color: white;
+  text-shadow: 0px 0px 8px #05B2DC;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
-.vanitorys:active {
-  width: 120px;
-  height: 100px;
-  background-size: contain;
-  transition: all 0.5s;
+
+.btn-card {
+  border: 1px solid #05B2DC;
+  padding: 5px 10px 5px 10px;
+  color: white;
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  visibility: hidden;
 }
 
 /*fin main*//*# sourceMappingURL=style.css.map */
