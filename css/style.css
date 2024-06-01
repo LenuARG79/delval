@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #242222;
+}
+
 .whatsapp-pc {
   visibility: hidden;
   position: fixed;
@@ -54,7 +58,7 @@
 .background-menu {
   justify-content: center;
   align-content: center;
-  background-color: black;
+  background-color: #242222;
   width: 100vw;
   height: 55px;
   margin-top: 5px;
@@ -69,7 +73,7 @@
   text-align: center;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 120px;
+  padding-top: 150px;
 }
 
 /*redes sociales*/
@@ -89,7 +93,7 @@
   text-shadow: 0px 0px 5px black;
 }
 .fa-square-facebook:hover {
-  color: lightskyblue;
+  color: #05B2DC;
 }
 
 .fa-square-instagram {
@@ -97,7 +101,7 @@
   text-shadow: 0px 0px 5px black;
 }
 .fa-square-instagram:hover {
-  color: lightcoral;
+  color: #05B2DC;
 }
 
 @media (min-width: 768px) {
@@ -188,13 +192,19 @@
   font-family: "Courier New", Courier, monospace;
   text-decoration: none;
   padding: 10px;
-  color: #b4b4b4;
-  border-left: 4px solid transparent;
+  color: black;
+  /*border-left: 4px solid transparent;*/
   border-bottom: 1px solid #b4b4b4;
   transition: all 0.5s ease;
 }
 .cont-menu nav a:hover {
+  color: #05B2DC;
+  border-left: 3px solid #05B2DC;
   background: lightgray;
+}
+
+.active-inicio-mobil {
+  border-left: 3px solid #05B2DC;
 }
 
 .cont-menu label i {
@@ -239,7 +249,12 @@
     padding: 15px;
   }
   .menu-pc nav a:hover {
-    color: gray;
+    color: #05B2DC;
+    border-bottom: 1px solid #05B2DC;
+    transition: all 0.5s;
+  }
+  .active-inicio-pc {
+    border-bottom: 1px solid #05B2DC;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -270,4 +285,73 @@
     font-size: 26px;
   }
 }
-/*fin header*//*# sourceMappingURL=style.css.map */
+/*fin header*/
+.hr-web {
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  width: 20%;
+  height: 2px;
+  color: #05B2DC;
+  background-color: #05B2DC;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/*main*/
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.titulos {
+  color: white;
+  text-shadow: 0px 0px 8px #05B2DC;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  /*margin-bottom: 30px;*/
+}
+
+.categorias {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(1, 120px);
+  margin-left: 5px;
+  margin-right: 5px;
+  grid-gap: 10px;
+  padding: 25px;
+}
+
+.categoria {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 180px;
+}
+
+.espejos {
+  background-image: url(../img/espejos.jpg);
+  transition: all 0.5s;
+}
+.espejos:active {
+  width: 120px;
+  height: 100px;
+  background-size: contain;
+  transition: all 0.5s;
+}
+
+.vanitorys {
+  background-image: url(../img/vanitorys.jpg);
+  transition: all 0.5s;
+}
+.vanitorys:active {
+  width: 120px;
+  height: 100px;
+  background-size: contain;
+  transition: all 0.5s;
+}
+
+/*fin main*//*# sourceMappingURL=style.css.map */

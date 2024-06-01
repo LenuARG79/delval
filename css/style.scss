@@ -3,8 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: #242222;
+}
 @import "_whatsapp";
 
 /*header*/
 @import "_header";
 /*fin header*/ 
+
+.hr-web {
+    display: flex;
+    justify-content: center;
+}
+hr {
+    width: 20%;
+    height: 2px;
+    color: #05B2DC;
+    background-color: #05B2DC;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+/*main*/
+@import "_main";
+/*fin main*/
