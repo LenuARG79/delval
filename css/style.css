@@ -49,7 +49,8 @@ body {
 /*header*/
 .header {
   background-image: url(../img/backgruond-header.jpg);
-  height: 100vh;
+  height: 80vh;
+  width: 100vw;
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -263,6 +264,9 @@ body {
   }
 }
 @media (min-width: 768px) {
+  .header {
+    height: 100vh;
+  }
   .logo-index {
     width: 110px;
     margin-left: 35px;
@@ -339,7 +343,7 @@ hr {
 
 .card-h3 {
   color: white;
-  text-shadow: 0px 0px 8px #05B2DC;
+  text-shadow: 0px 0px 10px #05B2DC;
   font-family: "Courier New", Courier, monospace;
   font-size: 14px;
   text-align: center;
