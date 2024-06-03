@@ -1,8 +1,6 @@
-.header {
-    background-image: url(../img/backgruond-header.jpg);
+.header-bg {background-image: url(../img/backgruond-header.jpg);
     height: 80vh;
     width: 100vw;
-
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
@@ -24,7 +22,7 @@
     text-align: center;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 150px;  
+    padding-top: 120px;  
 }
 /*redes sociales*/
 @import "_socialicon";
@@ -37,7 +35,6 @@
 .logo-index {
     width: 90px;
     margin-left: 25px;
-    margin-top: px;
 }
 @import "_menu";
 
@@ -58,6 +55,9 @@
 }
 }
 @media (min-width:576px) and (max-width:767px){
+    .header {
+        height: 100vh;
+}
     .background-menu {
         height: 61px;
 }
