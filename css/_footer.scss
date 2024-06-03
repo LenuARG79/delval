@@ -15,3 +15,13 @@ footer {
         text-align: center;
     }
 }
+@media (min-width: 768px) {
+    .footer h3 {
+        font-size: 20px;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    .footer h3 {
+        font-size: 16px;
+    }
+}

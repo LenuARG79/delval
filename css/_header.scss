@@ -39,9 +39,9 @@
 @import "_menu";
 
 @media (min-width: 768px) {
-    .header {
+    .header-bg {
         height: 100vh;
-}   
+}  
     .logo-index {
         width: 110px;
         margin-left: 35px;
@@ -55,9 +55,6 @@
 }
 }
 @media (min-width:576px) and (max-width:767px){
-    .header {
-        height: 100vh;
-}
     .background-menu {
         height: 61px;
 }
