@@ -401,37 +401,51 @@ hr {
   }
 }
 /*fin main*/
-/*footer*/
-footer {
-  background-color: black;
-  color: white;
-  text-shadow: 0px 0px 8px #05B2DC;
-  height: 50px;
+/*Section clientes*/
+.clientes {
+  display: flex;
+  justify-content: center;
 }
 
-.footer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+.carousel {
+  width: 80vw;
 }
-.footer h3 {
-  font-size: 12px;
-  font-family: "Courier New", Courier, monospace;
-  margin-top: 8px;
-  text-align: center;
+
+.carousel-control-prev-icon {
+  background-image: none;
+}
+
+.fa-angle-left {
+  color: #05B2DC;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  left: -18px;
+}
+
+.carousel-control-next-icon {
+  background-image: none;
+}
+
+.fa-angle-right {
+  color: #05B2DC;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  right: -18px;
 }
 
 @media (min-width: 768px) {
-  .footer h3 {
-    font-size: 20px;
+  .carousel {
+    width: 50vw;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .footer h3 {
-    font-size: 16px;
+  .carousel {
+    width: 60vw;
   }
 }
-/*fin footer*/
+/*fin section clientes*/
 /*Nosotros*/
 .bg-bordes1 {
   margin-top: 5px;
@@ -487,4 +501,36 @@ footer {
     font-size: 16px;
   }
 }
-/*fin Nosotros*//*# sourceMappingURL=style.css.map */
+/*fin Nosotros*/
+/*footer*/
+footer {
+  background-color: black;
+  color: white;
+  text-shadow: 0px 0px 8px #05B2DC;
+  height: 90px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.footer h3 {
+  font-size: 12px;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 8px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer h3 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .footer h3 {
+    font-size: 16px;
+  }
+}
+/*fin footer*//*# sourceMappingURL=style.css.map */
