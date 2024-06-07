@@ -2,6 +2,7 @@ footer {
     background-color: black;
     color: white;
     text-shadow: 0px 0px 8px #05B2DC;
+    width: 100vw;
     height: 90px;
 }
 .footer {
@@ -20,6 +21,7 @@ footer {
     .footer h3 {
         font-size: 20px;
     }
+   
 }
 @media (min-width:576px) and (max-width:767px){
     .footer h3 {

@@ -507,6 +507,7 @@ footer {
   background-color: black;
   color: white;
   text-shadow: 0px 0px 8px #05B2DC;
+  width: 100vw;
   height: 90px;
 }
 
