@@ -11,19 +11,6 @@ body {
 /*header*/
 @import "_header";
 /*fin header*/ 
-
-.hr-web {
-    display: flex;
-    justify-content: center;
-}
-hr {
-    width: 20%;
-    height: 2px;
-    color: #05B2DC;
-    background-color: #05B2DC;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
 /*main*/
 @import "_main";
 /*fin main*/
@@ -36,6 +23,22 @@ hr {
 /*productos*/
 @import "_productos";
 /*fin productos*/
+
+.hr-web {
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+}
+hr {
+    width: 20%;
+    height: 2px;
+    color: #05B2DC;
+    background-color: #05B2DC;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    z-index: -1;
+}
+
 /*footer*/
 @import "_footer";
 /*fin footer*/

@@ -190,13 +190,13 @@ body {
 }
 
 .cont-menu {
-  width: 100%;
-  max-width: 250px;
+  width: 100vw;
+  max-width: 200px;
   height: 100vh;
   background: #f8f8f8;
-  z-index: 4;
-  /*position: relative;*/
+  position: relative;
   transition: all 0.5s ease;
+  z-index: 1;
 }
 
 .cont-menu nav {
@@ -237,7 +237,7 @@ body {
 .fa-x {
   color: white;
   text-shadow: 0px 0px 5px black;
-  margin-right: 9px;
+  margin-right: -90px;
   margin-top: 25px;
 }
 
@@ -307,20 +307,6 @@ body {
   }
 }
 /*fin header*/
-.hr-web {
-  display: flex;
-  justify-content: center;
-}
-
-hr {
-  width: 20%;
-  height: 2px;
-  color: #05B2DC;
-  background-color: #05B2DC;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
 /*main*/
 .main {
   display: flex;
@@ -351,6 +337,7 @@ hr {
   align-items: center;
   border: 4px double #05B2DC;
   background-color: #242222;
+  z-index: -1;
 }
 
 .fa-main {
@@ -507,6 +494,22 @@ hr {
 }
 
 /*fin productos*/
+.hr-web {
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+}
+
+hr {
+  width: 20%;
+  height: 2px;
+  color: #05B2DC;
+  background-color: #05B2DC;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  z-index: -1;
+}
+
 /*footer*/
 footer {
   background-color: black;
