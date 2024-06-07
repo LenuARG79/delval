@@ -382,8 +382,6 @@ hr {
 
 @media (min-width: 768px) {
   .categorias {
-    /*grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(1 250px);*/
     grid-gap: 70px;
     margin-left: 50px;
     margin-right: 50px;
@@ -446,7 +444,7 @@ hr {
   }
 }
 /*fin section clientes*/
-/*Nosotros*/
+/*nosotros*/
 .bg-bordes1 {
   margin-top: 5px;
   border-bottom: 1px solid #05B2DC;
@@ -501,7 +499,14 @@ hr {
     font-size: 16px;
   }
 }
-/*fin Nosotros*/
+/*fin nosotros*/
+/*productos*/
+.productos {
+  display: flex;
+  justify-content: center;
+}
+
+/*fin productos*/
 /*footer*/
 footer {
   background-color: black;
