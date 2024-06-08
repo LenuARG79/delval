@@ -1,0 +1,87 @@
+.bg-bordes3 {
+    border-top: 1px solid #05B2DC;
+    height: 1px;
+    width: 100vw;
+}
+.prev {
+    display: flex;
+    justify-content: space-between;
+}
+.fa-arrow-left {
+    margin-left: 15px;
+    margin-top: 15px;
+    color: #05B2DC;
+    font-size: 16px;
+}
+.lista-productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 180px);
+    grid-gap: 15px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.espejos {
+    background-position: center;
+    background-size: cover;
+    height: 180px;
+     & h6 {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 10px;
+        text-align: center;
+        color: white;
+        text-shadow: 0px 0px 5px #05B2DC;
+        padding-top: 5px;
+    }
+.contenedor-h6 {
+    background-color: black;
+    opacity: 0.7;
+    width: 100%;
+    height: 30px;
+    display: block;
+    margin-top: 150px;
+}
+}
+.espejo1 {
+    background-image: url(../img/espejo1.jpg);
+}
+.espejo2 {
+    background-image: url(../img/espejo2.jpg);
+}
+.espejo3 {
+    background-image: url(../img/espejo3.jpg);
+}
+.espejo4 {
+    background-image: url(../img/espejo1.jpg);
+}
+.espejo5 {
+    background-image: url(../img/espejo2.jpg);
+}
+.espejo6 {
+    background-image: url(../img/espejo3.jpg);
+}
+@media (min-width: 768px) {
+    .lista-productos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 360px);
+    }
+    .contenedor-h6 {
+        background-color: black;
+        opacity: 0.7;
+        width: 100%;
+        height: 30px;
+        display: block;
+        margin-top: 330px;
+    }
+    .espejos {
+        background-position: center;
+        background-size: cover;
+        height: 360px;
+         & h6 {
+            font-size: 14px;
+        }
+    }
+}

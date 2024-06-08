@@ -24,7 +24,6 @@
     align-items: center;
     border: 4px double #05B2DC;
     background-color: #242222;
-    z-index: -1;
 }
 .fa-main {
     color:#05B2DC;
@@ -46,27 +45,27 @@
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
     font-size: 10px;
-    &:active {
+     &:active {
         background-color: #05B2DC;
     }
 }
 @media (min-width: 768px) {
     .categorias {
-        grid-gap: 70px;
-        margin-left: 50px;
-        margin-right: 50px;
+       grid-gap: 70px;
+       margin-left: 50px;
+       margin-right: 50px;
 
 }
     .btn-card {
-        font-size: 14px;
-    &:hover {
-        background-color: #05B2DC;
+       font-size: 14px;
+         &:hover {
+          background-color: #05B2DC;
     }
 }
 }
 @media (min-width:576px) and (max-width:767px){
     .btn-card {
-        font-size: 12px;
+       font-size: 12px;
     }
 }
 

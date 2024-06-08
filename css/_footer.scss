@@ -1,8 +1,8 @@
 footer {
-    background-color: black;
+    background: black;
     color: white;
     text-shadow: 0px 0px 8px #05B2DC;
-    width: 100vw;
+    width: 100%;
     height: 90px;
 }
 .footer {
@@ -17,11 +17,11 @@ footer {
         text-align: center;
     }
 }
+
 @media (min-width: 768px) {
     .footer h3 {
         font-size: 20px;
     }
-   
 }
 @media (min-width:576px) and (max-width:767px){
     .footer h3 {
