@@ -568,6 +568,7 @@ body {
   bottom: 1px;
 }
 
+/*espejos productos*/
 .espejo1 {
   background-image: url(../img/espejo1.jpg);
 }
@@ -592,6 +593,33 @@ body {
   background-image: url(../img/espejo3.jpg);
 }
 
+/*fin espejos productos*/
+/*vanitorys productos*/
+.vanitor1 {
+  background-image: url(../img/vanitor1.jpg);
+}
+
+.vanitor2 {
+  background-image: url(../img/vanitor2.jpg);
+}
+
+.vanitor3 {
+  background-image: url(../img/vanitor3.jpg);
+}
+
+.vanitor4 {
+  background-image: url(../img/vanitor1.jpg);
+}
+
+.vanitor5 {
+  background-image: url(../img/vanitor2.jpg);
+}
+
+.vanitor6 {
+  background-image: url(../img/vanitor3.jpg);
+}
+
+/*fin vanitorys productos*/
 @media (min-width: 768px) {
   .lista-productos {
     display: grid;
