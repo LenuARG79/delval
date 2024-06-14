@@ -515,6 +515,10 @@ body {
   flex-direction: column;
 }
 
+.contenido-productos {
+  height: 15vh;
+}
+
 /*fin productos*/
 /*espejos*/
 .bg-bordes3 {
