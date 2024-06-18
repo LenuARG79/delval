@@ -199,6 +199,8 @@ body {
   padding: 8px;
   font-size: 13px;
   color: black;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px black;
   transition: all 10ms;
 }
 .btn-slide:active {
