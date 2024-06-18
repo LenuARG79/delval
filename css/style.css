@@ -7,7 +7,7 @@
 body {
   background-color: #242222;
 }
-/*whatsapp*/
+
 .whatsapp-pc {
   visibility: hidden;
   position: fixed;
@@ -17,6 +17,7 @@ body {
   bottom: 60px;
   z-index: 4;
 }
+
 .whatsapp-mobil {
   visibility: visible;
   position: fixed;
@@ -26,16 +27,26 @@ body {
   bottom: 60px;
   z-index: 4;
 }
-/*fin whatsapp*/
+
+@media (min-width: 768px) {
+  .whatsapp-pc {
+    font-size: 50px;
+    visibility: visible;
+  }
+  .whatsapp-mobil {
+    visibility: hidden;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .whatsapp-pc {
+    font-size: 50px;
+    visibility: hidden;
+  }
+  .whatsapp-mobil {
+    visibility: visible;
+  }
+}
 /*header*/
-.logo-header {
-  display: flex;
-  justify-content: space-between;
-}
-.logo-index {
-  width: 90px;
-  margin-left: 25px;
-}
 .header-bg {
   background-image: url(../img/backgruond-header.png);
   height: 80vh;
@@ -44,6 +55,7 @@ body {
   background-position: right;
   background-repeat: no-repeat;
 }
+
 .background-menu {
   justify-content: center;
   align-content: center;
@@ -52,6 +64,7 @@ body {
   height: 55px;
   margin-top: 5px;
 }
+
 .h2-header {
   color: white;
   text-shadow: 3px 2px 1px black;
@@ -63,19 +76,91 @@ body {
   padding-right: 15px;
   padding-top: 120px;
 }
+
+/*redes sociales*/
+.social-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding-top: 15px;
+  font-size: 22px;
+}
+.social-icon a {
+  margin-right: 15px;
+}
+
+.fa-square-facebook {
+  color: white;
+  text-shadow: 0px 0px 5px black;
+}
+.fa-square-facebook:hover {
+  color: #05B2DC;
+}
+
+.fa-square-instagram {
+  color: white;
+  text-shadow: 0px 0px 5px black;
+}
+.fa-square-instagram:hover {
+  color: #05B2DC;
+}
+
+.fa-mobil {
+  letter-spacing: 5px;
+  text-shadow: none;
+  margin-top: 25px;
+  margin-left: 15px;
+}
+
+.fa-facebook-mobil {
+  color: black;
+}
+
+.fa-instagram-mobil {
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .social-icon a {
+    font-size: 26px;
+    margin-right: 45px;
+    margin-left: -25px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .social-icon a {
+    font-size: 24px;
+    margin-right: 40px;
+    margin-left: -20px;
+  }
+}
+/*fin redes sociales*/
+.logo-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-index {
+  width: 90px;
+  margin-left: 25px;
+}
+
 #btn-menu {
   display: none;
 }
+
 #btn-menu:checked + .container-menu {
   opacity: 1;
   visibility: visible;
 }
+
 .icon-menu {
   display: flex;
   align-items: center;
   flex-direction: column;
   margin-right: 32px;
 }
+
 .fa-bars {
   color: white;
   text-shadow: 0px 0px 5px black;
@@ -83,6 +168,7 @@ body {
   cursor: pointer;
   font-size: 20px;
 }
+
 .p-menu {
   visibility: hidden;
   font-family: "Courier New", Courier, monospace;
@@ -90,6 +176,7 @@ body {
   color: white;
   text-shadow: 0px 0px 5px black;
 }
+
 .container-menu {
   position: absolute;
   background: rgba(0, 0, 0, 0.7);
@@ -101,6 +188,7 @@ body {
   opacity: 0;
   visibility: hidden;
 }
+
 .cont-menu {
   width: 100vw;
   max-width: 200px;
@@ -108,11 +196,12 @@ body {
   background: #f8f8f8;
   position: relative;
   transition: all 0.5s ease;
-  z-index: 3;
 }
+
 .cont-menu nav {
   transform: translateY(29%);
 }
+
 .btn-slide {
   display: block;
   font-family: "Courier New", Courier, monospace;
@@ -130,9 +219,11 @@ body {
   background: lightgray;
   transition: all 10ms;
 }
+
 .active-inicio-mobil {
   border-left: 3px solid #05B2DC;
 }
+
 .cont-menu label i {
   font-size: 16px;
   position: absolute;
@@ -141,435 +232,27 @@ body {
   color: white;
   cursor: pointer;
 }
+
 .fa-x {
   color: white;
   text-shadow: 0px 0px 5px black;
   margin-right: -90px;
   margin-top: 25px;
 }
+
 .menu-pc2 {
   display: flex;
   justify-content: end;
   margin-right: 85px;
   margin-top: -40px;
 }
+
 .menu-pc {
   display: none;
   font-family: "Courier New", Courier, monospace;
 }
-/*fin header*/
 
-/*redes sociales*/
-.social-icon {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  padding-top: 15px;
-  font-size: 22px;
-}
-.social-icon a {
-  margin-right: 15px;
-}
-.fa-square-facebook {
-  color: white;
-  text-shadow: 0px 0px 5px black;
-}
-.fa-square-facebook:hover {
-  color: #05B2DC;
-}
-.fa-square-instagram {
-  color: white;
-  text-shadow: 0px 0px 5px black;
-}
-.fa-square-instagram:hover {
-  color: #05B2DC;
-}
-.fa-mobil {
-  letter-spacing: 5px;
-  text-shadow: none;
-  margin-top: 25px;
-  margin-left: 15px;
-}
-.fa-facebook-mobil {
-  color: black;
-}
-.fa-instagram-mobil {
-  color: black;
-}
-/*fin redes sociales*/
-
-/*main*/
-.main {
-  display: flex;
-  justify-content: center;
-}
-.titulos {
-  color: white;
-  text-shadow: 0px 0px 8px #05B2DC;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-.categorias {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(1, 200px);
-  margin-left: 5px;
-  margin-right: 5px;
-  grid-gap: 10px;
-  padding: 20px;
-}
-.card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 4px double #05B2DC;
-  background-color: #242222;
-}
-.fa-main {
-  color: #05B2DC;
-  font-size: 80px;
-}
-.card-h3 {
-  color: white;
-  text-shadow: 0px 0px 10px #05B2DC;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 14px;
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-.btn-card {
-  border: 1px solid #05B2DC;
-  padding: 5px 10px 5px 10px;
-  color: white;
-  text-decoration: none;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 10px;
-}
-.btn-card:active {
-  background-color: #05B2DC;
-}
-/*fin main*/
-
-/*Section clientes*/
-.clientes {
-  display: flex;
-  justify-content: center;
-}
-.carousel {
-  width: 80vw;
-}
-.carousel-control-prev-icon {
-  background-image: none;
-}
-.fa-angle-left {
-  color: #05B2DC;
-  font-size: 30px;
-  font-weight: bold;
-  position: absolute;
-  left: -18px;
-}
-.carousel-control-next-icon {
-  background-image: none;
-}
-.fa-angle-right {
-  color: #05B2DC;
-  font-size: 30px;
-  font-weight: bold;
-  position: absolute;
-  right: -18px;
-}
-/*fin section clientes*/
-
-/*nosotros*/
-.bg-bordes1 {
-  margin-top: 5px;
-  border-bottom: 1px solid #05B2DC;
-  height: 1px;
-  width: 100vw;
-}
-.bg-bordes2 {
-  border-top: 1px solid #05B2DC;
-  height: 1px;
-  width: 100vw;
-}
-.titulos-pages {
-  color: white;
-  text-shadow: 0px 0px 8px #05B2DC;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-.subtitulos-pages {
-  color: white;
-  text-shadow: 0px 0px 8px #05B2DC;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 18px;
-  margin-top: 15px;
-  margin-bottom: 25px;
-  text-align: center;
-  padding-right: 20px;
-}
-.hr-page {
-  margin-top: 45px;
-}
-.p-texto {
-  color: white;
-  font-size: 14px;
-  text-shadow: 0px 0px 5px #05B2DC;
-  text-align: justify;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-/*fin nosotros*/
-
-/*productos*/
-.productos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.contenido-productos {
-  height: 40px;
-}
-.categorias-productos {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(1, 200px);
-  margin-left: 5px;
-  margin-right: 5px;
-  grid-gap: 10px;
-  padding: 10px;
-}
-.card-productos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 4px double #05B2DC;
-  background-color: #242222;
-}
-.fa-main-productos {
-  color: #05B2DC;
-  font-size: 80px;
-  z-index: 1;
-}
-.card-h3-productos {
-  color: white;
-  text-shadow: 0px 0px 10px #05B2DC;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 14px;
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-.btn-card-productos {
-  border: 1px solid #05B2DC;
-  padding: 5px 10px 5px 10px;
-  color: white;
-  text-decoration: none;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 10px;
-}
-.btn-card-productos:active {
-  background-color: #05B2DC;
-}
-/*fin productos*/
-
-/*espejos*/
-.bg-bordes3 {
-  border-top: 1px solid #05B2DC;
-  height: 1px;
-  width: 100vw;
-}
-.prev {
-  display: flex;
-  justify-content: space-between;
-}
-.fa-arrow-left {
-  margin-left: 15px;
-  margin-top: 15px;
-  color: #05B2DC;
-  font-size: 16px;
-}
-.lista-productos {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, 180px);
-  grid-gap: 15px;
-  margin-top: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 5px;
-}
-.espejos {
-  background-position: center;
-  background-size: cover;
-  height: 180px;
-}
-.espejos h6 {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 10px;
-  text-align: center;
-  color: white;
-  text-shadow: 0px 0px 5px #05B2DC;
-  padding-top: 5px;
-}
-.contenedor-h6 {
-  background-color: black;
-  opacity: 0.7;
-  width: 100%;
-  height: 30px;
-  bottom: 1px;
-}
-.espejo1 {
-  background-image: url(../img/espejo1.jpg);
-}
-.espejo2 {
-  background-image: url(../img/espejo2.jpg);
-}
-.espejo3 {
-  background-image: url(../img/espejo3.jpg);
-}
-.espejo4 {
-  background-image: url(../img/espejo1.jpg);
-}
-.espejo5 {
-  background-image: url(../img/espejo2.jpg);
-}
-.espejo6 {
-  background-image: url(../img/espejo3.jpg);
-}
-/*fin espejos*/
-/*vanitorys*/
-.vanitor1 {
-  background-image: url(../img/vanitor1.jpg);
-}
-.vanitor2 {
-  background-image: url(../img/vanitor2.jpg);
-}
-.vanitor3 {
-  background-image: url(../img/vanitor3.jpg);
-}
-.vanitor4 {
-  background-image: url(../img/vanitor1.jpg);
-}
-.vanitor5 {
-  background-image: url(../img/vanitor2.jpg);
-}
-.vanitor6 {
-  background-image: url(../img/vanitor3.jpg);
-}
-/*fin vanitorys*/
-
-/*contacto*/
-.info-contacto {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4 180px);
-  grid-gap: 15px;
-  margin-top: 15px;
-  margin-left: 10px;
-  margin-right: 5px;
-}
-.whatsapp-pc-contacto {
-  visibility: hidden;
-  color: #05B2DC;
-  font-size: 30px;
-}
-.whatsapp-mobil-contacto {
-  visibility: visible;
-  color: #05B2DC;
-  font-size: 30px;
-}
-h5 {
-  font-size: 16px;
-  font-family: "Courier New", Courier, monospace;
-  color: white;
-  text-shadow: 0px 0px 8px #05B2DC;
-  display: inline-block;
-}
-.fa-envelope {
-  color: #05B2DC;
-  font-size: 28px;
-  margin-right: 26px;
-}
-.fa-location-dot {
-  color: #05B2DC;
-  font-size: 30px;
-  margin-right: 10px;
-}
-/* fin contacto*/
-
-/*estilos*/
-.hr-web {
-  display: flex;
-  justify-content: center;
-  z-index: -1;
-}
-hr {
-  width: 20%;
-  height: 2px;
-  color: #05B2DC;
-  background-color: #05B2DC;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  z-index: -1;
-}
-/*fin estilos*/
-
-/*footer*/
-footer {
-  background: black;
-  color: white;
-  text-shadow: 0px 0px 8px #05B2DC;
-  width: 100%;
-  height: 90px;
-}
-.footer {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.footer h3 {
-  font-size: 12px;
-  font-family: "Courier New", Courier, monospace;
-  margin-top: 8px;
-  text-align: center;
-  text-decoration: none;
-}
-/*fin footer/*
-
-/*inicio media*/
 @media (min-width: 768px) {
-  .whatsapp-pc {
-    font-size: 50px;
-    visibility: visible;
-  }
-  .whatsapp-mobil {
-    visibility: hidden;
-  }
-  .social-icon a {
-    font-size: 26px;
-    margin-right: 45px;
-    margin-left: -25px;
-  }
-  .header-bg {
-    height: 100vh;
-  }
-  .logo-index {
-    width: 110px;
-    margin-left: 35px;
-  }
-  .background-menu {
-    height: 66px;
-  }
-  .h2-header {
-    font-size: 28px;
-  }
   .btn-menu {
     display: none;
   }
@@ -590,6 +273,99 @@ footer {
   .active-inicio-pc {
     border-bottom: 1px solid #05B2DC;
   }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .p-menu {
+    visibility: visible;
+  }
+}
+@media (min-width: 768px) {
+  .header-bg {
+    height: 100vh;
+  }
+  .logo-index {
+    width: 110px;
+    margin-left: 35px;
+  }
+  .background-menu {
+    height: 66px;
+  }
+  .h2-header {
+    font-size: 28px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .background-menu {
+    height: 61px;
+  }
+  .logo-index {
+    width: 95px;
+  }
+  .h2-header {
+    font-size: 26px;
+  }
+}
+/*fin header*/
+/*main*/
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.titulos {
+  color: white;
+  text-shadow: 0px 0px 8px #05B2DC;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.categorias {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(1, 200px);
+  margin-left: 5px;
+  margin-right: 5px;
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px double #05B2DC;
+  background-color: #242222;
+}
+
+.fa-main {
+  color: #05B2DC;
+  font-size: 80px;
+}
+
+.card-h3 {
+  color: white;
+  text-shadow: 0px 0px 10px #05B2DC;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.btn-card {
+  border: 1px solid #05B2DC;
+  padding: 5px 10px 5px 10px;
+  color: white;
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 10px;
+}
+.btn-card:active {
+  background-color: #05B2DC;
+}
+
+@media (min-width: 768px) {
   .categorias {
     grid-gap: 70px;
     margin-left: 50px;
@@ -601,9 +377,106 @@ footer {
   .btn-card:hover {
     background-color: #05B2DC;
   }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .btn-card {
+    font-size: 12px;
+  }
+}
+/*fin main*/
+/*Section clientes*/
+.clientes {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel {
+  width: 80vw;
+}
+
+.carousel-control-prev-icon {
+  background-image: none;
+}
+
+.fa-angle-left {
+  color: #05B2DC;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  left: -18px;
+}
+
+.carousel-control-next-icon {
+  background-image: none;
+}
+
+.fa-angle-right {
+  color: #05B2DC;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  right: -18px;
+}
+
+@media (min-width: 768px) {
   .carousel {
     width: 50vw;
   }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .carousel {
+    width: 60vw;
+  }
+}
+/*fin section clientes*/
+/*nosotros*/
+.bg-bordes1 {
+  margin-top: 5px;
+  border-bottom: 1px solid #05B2DC;
+  height: 1px;
+  width: 100vw;
+}
+
+.bg-bordes2 {
+  border-top: 1px solid #05B2DC;
+  height: 1px;
+  width: 100vw;
+}
+
+.titulos-pages {
+  color: white;
+  text-shadow: 0px 0px 8px #05B2DC;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.subtitulos-pages {
+  color: white;
+  text-shadow: 0px 0px 8px #05B2DC;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  text-align: center;
+  padding-right: 20px;
+}
+
+.hr-page {
+  margin-top: 45px;
+}
+
+.p-texto {
+  color: white;
+  font-size: 14px;
+  text-shadow: 0px 0px 5px #05B2DC;
+  text-align: justify;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+@media (min-width: 768px) {
   .bg-bordes2 {
     margin-top: 5px;
   }
@@ -617,12 +490,81 @@ footer {
     font-size: 20px;
     margin-left: 35px;
   }
-  .contenido {
-    margin-bottom: 50px;
+}
+.contenido {
+  margin-bottom: 50px;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .titulos-pages {
+    font-size: 22px;
   }
-  .contenido-productos {
-    height: 50px;
+  .subtitulos-pages {
+    font-size: 20px;
   }
+  .p-texto {
+    font-size: 16px;
+  }
+}
+/*fin nosotros*/
+/*productos*/
+.productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contenido-productos {
+  height: 50px;
+}
+
+.categorias-productos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(1, 200px);
+  margin-left: 5px;
+  margin-right: 5px;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.card-productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 4px double #05B2DC;
+  background-color: #242222;
+}
+
+.fa-main-productos {
+  color: #05B2DC;
+  font-size: 80px;
+}
+
+.card-h3-productos {
+  color: white;
+  text-shadow: 0px 0px 10px #05B2DC;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.btn-card-productos {
+  border: 1px solid #05B2DC;
+  padding: 5px 10px 5px 10px;
+  color: white;
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 10px;
+}
+.btn-card-productos:active {
+  background-color: #05B2DC;
+}
+
+@media (min-width: 768px) {
   .categorias-productos {
     grid-gap: 70px;
     margin-left: 50px;
@@ -634,6 +576,118 @@ footer {
   .btn-card-productos:hover {
     background-color: #05B2DC;
   }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .btn-card-productos {
+    font-size: 12px;
+  }
+}
+/*fin productos*/
+/*espejos*/
+.bg-bordes3 {
+  border-top: 1px solid #05B2DC;
+  height: 1px;
+  width: 100vw;
+}
+
+.prev {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-arrow-left {
+  margin-left: 15px;
+  margin-top: 15px;
+  color: #05B2DC;
+  font-size: 16px;
+}
+
+.lista-productos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 180px);
+  grid-gap: 15px;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.espejos {
+  background-position: center;
+  background-size: cover;
+  height: 180px;
+}
+.espejos h6 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 10px;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 5px #05B2DC;
+  padding-top: 5px;
+}
+
+.contenedor-h6 {
+  background-color: black;
+  opacity: 0.7;
+  width: 100%;
+  height: 30px;
+  bottom: 1px;
+}
+
+/*espejos productos*/
+.espejo1 {
+  background-image: url(../img/espejo1.jpg);
+}
+
+.espejo2 {
+  background-image: url(../img/espejo2.jpg);
+}
+
+.espejo3 {
+  background-image: url(../img/espejo3.jpg);
+}
+
+.espejo4 {
+  background-image: url(../img/espejo1.jpg);
+}
+
+.espejo5 {
+  background-image: url(../img/espejo2.jpg);
+}
+
+.espejo6 {
+  background-image: url(../img/espejo3.jpg);
+}
+
+/*fin espejos productos*/
+/*vanitorys productos*/
+.vanitor1 {
+  background-image: url(../img/vanitor1.jpg);
+}
+
+.vanitor2 {
+  background-image: url(../img/vanitor2.jpg);
+}
+
+.vanitor3 {
+  background-image: url(../img/vanitor3.jpg);
+}
+
+.vanitor4 {
+  background-image: url(../img/vanitor1.jpg);
+}
+
+.vanitor5 {
+  background-image: url(../img/vanitor2.jpg);
+}
+
+.vanitor6 {
+  background-image: url(../img/vanitor3.jpg);
+}
+
+/*fin vanitorys productos*/
+@media (min-width: 768px) {
   .lista-productos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -655,59 +709,101 @@ footer {
   .espejos h6 {
     font-size: 14px;
   }
-  .footer h3 {
-    font-size: 20px;
-    text-decoration: none;
-  }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .whatsapp-pc {
-    font-size: 50px;
-    visibility: hidden;
-  }
-  .whatsapp-mobil {
-    visibility: visible;
-  }
-  .social-icon a {
-    font-size: 24px;
-    margin-right: 40px;
-    margin-left: -20px;
-  }
-  .background-menu {
-    height: 61px;
-  }
-  .logo-index {
-    width: 95px;
-  }
-  .h2-header {
-    font-size: 26px;
-  }
-  .p-menu {
-    visibility: visible;
-  }
-  .btn-card {
-    font-size: 12px;
-  }
-  .carousel {
-    width: 60vw;
-  }
-  .titulos-pages {
-    font-size: 22px;
-  }
-  .subtitulos-pages {
-    font-size: 20px;
-  }
-  .p-texto {
-    font-size: 16px;
-  }
-  .btn-card-productos {
-    font-size: 12px;
-  }
   .lista-productos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(2, 180px);
   }
+}
+/*fin espejos*/
+/*contacto*/
+.info-contacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4 180px);
+  grid-gap: 15px;
+  margin-top: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  justify-items: center;
+  align-items: center;
+}
+
+.whatsapp-pc-contacto {
+  visibility: hidden;
+  color: #05B2DC;
+  font-size: 30px;
+}
+
+.whatsapp-mobil-contacto {
+  visibility: visible;
+  color: #05B2DC;
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  text-shadow: 0px 0px 8px #05B2DC;
+  display: inline-block;
+}
+
+.fa-envelope {
+  color: #05B2DC;
+  font-size: 28px;
+  margin-right: 26px;
+}
+
+.fa-location-dot {
+  color: #05B2DC;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .whatsapp-pc-contacto {
+    visibility: visible;
+    margin-top: 50px;
+    padding-right: 25px;
+    margin-left: -30px;
+  }
+  .whatsapp-mobil-contacto {
+    visibility: hidden;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  .info-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4 160px);
+    grid-gap: 15px;
+    margin-left: 8%;
+    margin-top: 15px;
+  }
+  .mail {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .loc {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .iframe {
+    grid-column: 2/3;
+    grid-row: 1/4;
+    width: 500px;
+    height: 400px;
+  }
+  .h5-loc {
+    align-items: center;
+    font-size: 17px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
   .whatsapp-pc-contacto {
     visibility: hidden;
   }
@@ -739,9 +835,57 @@ footer {
     align-items: center;
     font-size: 12px;
   }
+}
+/*fin contacto*/
+.hr-web {
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+}
+
+hr {
+  width: 20%;
+  height: 2px;
+  color: #05B2DC;
+  background-color: #05B2DC;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  z-index: -1;
+}
+
+/*footer*/
+footer {
+  background: black;
+  color: white;
+  text-shadow: 0px 0px 8px #05B2DC;
+  width: 100%;
+  height: 90px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.footer h3 {
+  font-size: 12px;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 8px;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .footer h3 {
+    font-size: 20px;
+    text-decoration: none;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
   .footer h3 {
     font-size: 16px;
     text-decoration: none;
   }
 }
-/*fin media*/
+/*fin footer*//*# sourceMappingURL=style.css.map */
