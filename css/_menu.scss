@@ -38,8 +38,8 @@
 }
 .cont-menu {
     width: 100vw;
-    max-width: 200px;
-    height: 42%;
+    max-width: 120px;
+    height: 100vh;
     background:#f8f8f8;
     opacity: 0.8;
     position: relative;
@@ -47,14 +47,14 @@
     z-index: 3;
 }
 .cont-menu nav {
-    transform: translateY(15%);
+    transform: translateY(25%);
 }
 .btn-slide {
     display: block;
     font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
     padding: 8px;
-    font-size: 13px;
+    font-size: 14px;
     color: black;
     border-bottom: 1px solid gray;
     transition: all 10ms;
@@ -80,8 +80,9 @@
 .fa-x {
     color: white;
     text-shadow: 0px 0px 5px black ;
-    margin-right: -90px;
-    margin-top: 25px;
+    position: absolute;
+    margin-right: -150% ;
+    margin-top: 38px;
 }
 .menu-pc2 {
     display: flex;
@@ -118,5 +119,8 @@
 @media (min-width:576px) and (max-width:767px){
     .p-menu {
         visibility: visible;
+    }
+    .cont-menu {
+        max-width: 180px;
     }
 }
