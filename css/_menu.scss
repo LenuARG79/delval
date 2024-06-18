@@ -40,18 +40,18 @@
     transition: all 0.5s ease;
     z-index: 1;
 }
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .btn-slide {
-    //display: block;
-    display: inline-block;
     font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
-    padding: 8px;
-    //align-items: center;
-    font-size: 13px;
+    padding: 6px;
+    font-size: 14px;
     color: black;
     font-weight: bold;
-    text-shadow: 2px 2px 6px black;
-    //border-bottom: 1px solid gray;
     transition: all 10ms;
     &:active {
             color:#05B2DC;
