@@ -108,7 +108,7 @@ body {
 .fa-mobil {
   letter-spacing: 5px;
   text-shadow: none;
-  margin-top: 25px;
+  margin-top: 15px;
   margin-left: 15px;
 }
 
@@ -192,22 +192,24 @@ body {
 .cont-menu {
   width: 100vw;
   max-width: 200px;
-  height: 100vh;
+  height: 42%;
   background: #f8f8f8;
+  opacity: 0.8;
   position: relative;
   transition: all 0.5s ease;
+  z-index: 3;
 }
 
 .cont-menu nav {
-  transform: translateY(29%);
+  transform: translateY(15%);
 }
 
 .btn-slide {
   display: block;
   font-family: "Courier New", Courier, monospace;
   text-decoration: none;
-  padding: 10px;
-  font-size: 16px;
+  padding: 8px;
+  font-size: 13px;
   color: black;
   border-bottom: 1px solid gray;
   transition: all 10ms;
@@ -540,6 +542,8 @@ body {
 .fa-main-productos {
   color: #05B2DC;
   font-size: 80px;
+  position: relative;
+  z-index: 1;
 }
 
 .card-h3-productos {
@@ -625,6 +629,8 @@ body {
   color: white;
   text-shadow: 0px 0px 5px #05B2DC;
   padding-top: 5px;
+  position: relative;
+  z-index: 2;
 }
 
 .contenedor-h6 {

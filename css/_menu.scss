@@ -39,20 +39,22 @@
 .cont-menu {
     width: 100vw;
     max-width: 200px;
-    height: 100vh;
+    height: 42%;
     background:#f8f8f8;
+    opacity: 0.8;
     position: relative;
     transition: all 0.5s ease;
+    z-index: 3;
 }
 .cont-menu nav {
-    transform: translateY(29%);
+    transform: translateY(15%);
 }
 .btn-slide {
     display: block;
     font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
-    padding: 10px;
-    font-size: 16px;
+    padding: 8px;
+    font-size: 13px;
     color: black;
     border-bottom: 1px solid gray;
     transition: all 10ms;
