@@ -631,7 +631,7 @@ body {
 .lista-productos {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, 180px);
+  grid-template-rows: repeat(6, 180px);
   grid-gap: 15px;
   margin-top: 5px;
   margin-left: 10px;
@@ -678,18 +678,111 @@ body {
 }
 
 .espejo4 {
-  background-image: url(../img/espejo1.jpg);
+  background-image: url(../img/espejo4.jpg);
 }
 
 .espejo5 {
-  background-image: url(../img/espejo2.jpg);
+  background-image: url(../img/espejo5.jpg);
 }
 
 .espejo6 {
-  background-image: url(../img/espejo3.jpg);
+  background-image: url(../img/espejo6.jpg);
+}
+
+.espejo7 {
+  background-image: url(../img/espejo7.jpg);
+}
+
+.espejo8 {
+  background-image: url(../img/espejo8.jpg);
+}
+
+.espejo9 {
+  background-image: url(../img/espejo9.jpg);
+}
+
+.espejo10 {
+  background-image: url(../img/espejo10.jpg);
+}
+
+.espejo11 {
+  background-image: url(../img/espejo11.jpg);
+}
+
+.espejo12 {
+  background-image: url(../img/espejo12.jpg);
+}
+
+.espejo13 {
+  background-image: url(../img/espejo13.jpg);
+}
+
+.espejo14 {
+  background-image: url(../img/espejo14.jpg);
+}
+
+.espejo15 {
+  background-image: url(../img/espejo15.jpg);
+}
+
+.espejo16 {
+  background-image: url(../img/espejo16.jpg);
+}
+
+.espejo17 {
+  background-image: url(../img/espejo17.jpg);
+}
+
+.espejo18 {
+  background-image: url(../img/espejo17.jpg);
+}
+
+.espejo19 {
+  background-image: url(../img/espejo19.jpg);
+}
+
+.espejo20 {
+  background-image: url(../img/espejo20.jpg);
+}
+
+.espejo21 {
+  background-image: url(../img/espejo21.jpg);
+}
+
+.espejo22 {
+  background-image: url(../img/espejo22.jpg);
+}
+
+.espejo23 {
+  background-image: url(../img/espejo23.jpg);
+}
+
+.espejo24 {
+  background-image: url(../img/espejo24.jpg);
 }
 
 /*fin espejos productos*/
+/*pagina siguiente*/
+.paginas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 20px;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.number {
+  color: white;
+  font-size: 12px;
+}
+
+.number-1 {
+  color: #05B2DC;
+}
+
+/*pagina siguiente fin*/
 /*vanitorys productos*/
 .vanitor1 {
   background-image: url(../img/vanitor1.jpg);
@@ -704,23 +797,95 @@ body {
 }
 
 .vanitor4 {
-  background-image: url(../img/vanitor1.jpg);
+  background-image: url(../img/vanitor4.jpg);
 }
 
 .vanitor5 {
-  background-image: url(../img/vanitor2.jpg);
+  background-image: url(../img/vanitor5.jpg);
 }
 
 .vanitor6 {
-  background-image: url(../img/vanitor3.jpg);
+  background-image: url(../img/vanitor6.jpg);
+}
+
+.espejo7 {
+  background-image: url(../img/vanitor7.jpg);
+}
+
+.espejo8 {
+  background-image: url(../img/vanitor8.jpg);
+}
+
+.espejo9 {
+  background-image: url(../img/vanitor9.jpg);
+}
+
+.espejo10 {
+  background-image: url(../img/vanitor10.jpg);
+}
+
+.espejo11 {
+  background-image: url(../img/vanitor11.jpg);
+}
+
+.espejo12 {
+  background-image: url(../img/vanitor12.jpg);
+}
+
+.espejo13 {
+  background-image: url(../img/vanitor13.jpg);
+}
+
+.espejo14 {
+  background-image: url(../img/vanitor14.jpg);
+}
+
+.espejo15 {
+  background-image: url(../img/vanitor15.jpg);
+}
+
+.espejo16 {
+  background-image: url(../img/vanitor16.jpg);
+}
+
+.espejo17 {
+  background-image: url(../img/vanitor17.jpg);
+}
+
+.espejo18 {
+  background-image: url(../img/vanitor17.jpg);
+}
+
+.espejo19 {
+  background-image: url(../img/vanitor19.jpg);
+}
+
+.espejo20 {
+  background-image: url(../img/vanitor20.jpg);
+}
+
+.espejo21 {
+  background-image: url(../img/vanitor21.jpg);
+}
+
+.espejo22 {
+  background-image: url(../img/vanitor22.jpg);
+}
+
+.espejo23 {
+  background-image: url(../img/vanitor23.jpg);
+}
+
+.espejo24 {
+  background-image: url(../img/vanitor24.jpg);
 }
 
 /*fin vanitorys productos*/
 @media (min-width: 768px) {
   .lista-productos {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(2, 360px);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 360px);
   }
   .contenedor-h6 {
     background-color: black;
@@ -743,7 +908,7 @@ body {
   .lista-productos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(2, 180px);
+    grid-template-rows: repeat(4, 180px);
   }
 }
 /*fin espejos*/
