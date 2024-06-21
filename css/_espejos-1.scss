@@ -1,0 +1,78 @@
+h4 {
+    color: white;
+    text-shadow: 0px 0px 5px #05B2DC;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 25px;
+
+}
+.contenedor-detalle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.espejo-detalle {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: auto;
+    height: 500px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.espejo-1 {
+    background-image: url("../img/espejo1.jpg");
+}
+h6 {
+    color: white;
+    text-shadow: 0px 0px 5px #05B2DC;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.p-descripcion {
+    color: white;
+    text-shadow: 0px 0px 5px #05B2DC;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    margin-left: 15px;
+}
+@media (min-width: 768px) {
+   h4 {
+    font-size: 20px;
+   }
+   .contenedor-detalle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   }
+   .espejo-detalle {
+    width: 400px;
+    height: 600px;
+   }
+   h6 {
+    font-size: 18px;
+   }
+.p-descripcion {
+    font-size: 16px;
+   }
+
+}
+@media (min-width:576px) and (max-width:767px){
+    .contenedor-detalle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .espejo-detalle {
+        width: 400px;
+    }
+    h6 {
+        font-size: 16px;
+    }
+    .p-descripcion {
+        font-size: 14px;
+    }
+}

@@ -745,22 +745,18 @@ body {
   background-image: url(../img/espejo20.jpg);
 }
 
-.espejo21 {
-  background-image: url(../img/espejo21.jpg);
+/*.espejo21 {
+    background-image: url(../img/espejo21.jpg);
 }
-
 .espejo22 {
-  background-image: url(../img/espejo22.jpg);
+    background-image: url(../img/espejo22.jpg);
 }
-
 .espejo23 {
-  background-image: url(../img/espejo23.jpg);
+    background-image: url(../img/espejo23.jpg);
 }
-
 .espejo24 {
-  background-image: url(../img/espejo24.jpg);
-}
-
+    background-image: url(../img/espejo24.jpg);
+}*/
 /*fin espejos productos*/
 /*pagina siguiente*/
 .paginas {
@@ -848,38 +844,30 @@ body {
   background-image: url(../img/vanitor16.jpg);
 }
 
-.espejo17 {
-  background-image: url(../img/vanitor17.jpg);
+/*.espejo17 {
+    background-image: url(../img/vanitor17.jpg);
 }
-
 .espejo18 {
-  background-image: url(../img/vanitor17.jpg);
+    background-image: url(../img/vanitor17.jpg);
 }
-
 .espejo19 {
-  background-image: url(../img/vanitor19.jpg);
+    background-image: url(../img/vanitor19.jpg);
 }
-
 .espejo20 {
-  background-image: url(../img/vanitor20.jpg);
+    background-image: url(../img/vanitor20.jpg);
 }
-
 .espejo21 {
-  background-image: url(../img/vanitor21.jpg);
+    background-image: url(../img/vanitor21.jpg);
 }
-
 .espejo22 {
-  background-image: url(../img/vanitor22.jpg);
+    background-image: url(../img/vanitor22.jpg);
 }
-
 .espejo23 {
-  background-image: url(../img/vanitor23.jpg);
+    background-image: url(../img/vanitor23.jpg);
 }
-
 .espejo24 {
-  background-image: url(../img/vanitor24.jpg);
-}
-
+    background-image: url(../img/vanitor24.jpg);
+}*/
 /*fin vanitorys productos*/
 @media (min-width: 768px) {
   .lista-productos {
@@ -1082,4 +1070,88 @@ footer {
     text-decoration: none;
   }
 }
-/*fin footer*//*# sourceMappingURL=style.css.map */
+/*fin footer*/
+/*productos x pagina*/
+h4 {
+  color: white;
+  text-shadow: 0px 0px 5px #05B2DC;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contenedor-detalle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.espejo-detalle {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: auto;
+  height: 500px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.espejo-1 {
+  background-image: url("../img/espejo1.jpg");
+}
+
+h6 {
+  color: white;
+  text-shadow: 0px 0px 5px #05B2DC;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.p-descripcion {
+  color: white;
+  text-shadow: 0px 0px 5px #05B2DC;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  margin-left: 15px;
+}
+
+@media (min-width: 768px) {
+  h4 {
+    font-size: 20px;
+  }
+  .contenedor-detalle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .espejo-detalle {
+    width: 400px;
+    height: 600px;
+  }
+  h6 {
+    font-size: 18px;
+  }
+  .p-descripcion {
+    font-size: 16px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .contenedor-detalle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .espejo-detalle {
+    width: 400px;
+  }
+  h6 {
+    font-size: 16px;
+  }
+  .p-descripcion {
+    font-size: 14px;
+  }
+}
+/*fin productos x pagina*//*# sourceMappingURL=style.css.map */
