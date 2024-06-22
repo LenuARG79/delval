@@ -629,13 +629,11 @@ body {
 }
 
 .lista-productos {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(6, 190px);
-  grid-gap: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
   margin-bottom: 5px;
 }
 
@@ -643,32 +641,34 @@ body {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  width: auto;
+  width: 130px;
   height: 190px;
+  margin: 5px;
 }
 .espejos h6 {
+  height: 45px;
   font-family: "Courier New", Courier, monospace;
-  font-size: 10px;
+  font-size: 11px;
   text-align: center;
   color: white;
   text-shadow: 0px 0px 5px #05B2DC;
   padding-top: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 .contenedor-h6 {
   background-color: black;
   opacity: 0.7;
-  width: 91%;
-  margin-left: 5%;
-  height: 30px;
+  width: auto;
 }
 
 .btn-ver-mas {
   text-decoration: none;
   font-family: "Courier New", Courier, monospace;
-  font-size: 10px;
+  font-size: 11px;
   color: white;
-  padding: 5px;
+  padding: 3px;
   text-shadow: 0px 0px 5px #05B2DC;
 }
 
@@ -878,22 +878,18 @@ body {
 }*/
 /*fin vanitorys productos*/
 @media (min-width: 768px) {
-  .lista-productos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 360px);
-  }
   .contenedor-h6 {
     background-color: black;
     opacity: 0.7;
-    height: 40px;
+    height: 55px;
     width: 100%;
     margin-left: 0%;
   }
   .espejos {
     background-position: center;
     background-size: cover;
-    height: 360px;
+    width: 320px;
+    height: 480px;
   }
   .espejos h6 {
     font-size: 14px;
@@ -908,21 +904,16 @@ body {
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .lista-productos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(4, 280px);
-  }
   .contenedor-h6 {
     background-color: black;
     opacity: 0.7;
-    height: 40px;
-    width: 100%;
-    margin-left: 0%;
+    height: 50px;
   }
   .espejos {
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 180px;
     height: 280px;
   }
   .espejos h6 {
