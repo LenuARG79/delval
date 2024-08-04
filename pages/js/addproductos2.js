@@ -1,4 +1,3 @@
-
 const listaDeProductos = document.getElementById (`listaDeProductos`);
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -12,70 +11,70 @@ class Productos {
         this.img = img;
     }
 }
-let productosEspejosUno = [
-        {id: "E1", 
-            nombre: "Espejo 1", 
+let productosEspejosDos = [
+        {id: "E13", 
+            nombre: "Espejo 13", 
             descripcion: "Espejo de diseño con melamina", 
-            img: "/img/espejo1.jpg"
+            img: "/img/espejo13.jpg"
         },
-        { id: "E2",
-            nombre: "Espejo 2",
+        { id: "E14",
+            nombre: "Espejo 14",
             descripcion: "Espejo de diseño animal print",
-            img: "/img/espejo2.jpg"
+            img: "/img/espejo14.jpg"
         },
-        {id: "E3", 
-            nombre: "Espejo 3", 
+        {id: "E15", 
+            nombre: "Espejo 15", 
             descripcion: "Espejo de diseño con moldura", 
-            img: "/img/espejo3.jpg"
+            img: "/img/espejo15.jpg"
         },
-        { id: "E4",
-            nombre: "Espejo 4",
+        { id: "E16",
+            nombre: "Espejo 16",
             descripcion: "Espejo de diseño con melamina",
-            img: "/img/espejo4.jpg"
+            img: "/img/espejo16.jpg"
         },
-        {id: "E5", 
-            nombre: "Espejo 5", 
+        {id: "E17", 
+            nombre: "Espejo 17", 
             descripcion: "Espejo de diseño con melamina", 
-            img: "/img/espejo5.jpg"
+            img: "/img/espejo17.jpg"
         },
-        { id: "E6",
-            nombre: "Espejo 6",
+        { id: "E18",
+            nombre: "Espejo 18",
             descripcion: "Espejo de diseño animal print",
-            img: "/img/espejo6.jpg"
+            img: "/img/espejo18.jpg"
         },
-        {id: "E7", 
-            nombre: "Espejo 7", 
+        {id: "E19", 
+            nombre: "Espejo 19", 
             descripcion: "Espejo de diseño con moldura", 
-            img: "/img/espejo7.jpg"
+            img: "/img/espejo19.jpg"
         },
-        { id: "E8",
-            nombre: "Espejo 8",
+        { id: "E20",
+            nombre: "Espejo 20",
             descripcion: "Espejo de diseño con melamina",
-            img: "/img/espejo8.jpg"
+            img: "/img/espejo20.jpg"
         },
-        {id: "E9", 
-            nombre: "Espejo 9", 
+        {id: "E21", 
+            nombre: "Espejo 21", 
             descripcion: "Espejo de diseño con melamina", 
-            img: "/img/espejo9.jpg"
+            img: "/img/espejo21.jpg"
         },
-        { id: "E10",
-            nombre: "Espejo 10",
+        { id: "E22",
+            nombre: "Espejo 22",
             descripcion: "Espejo de diseño animal print",
-            img: "/img/espejo10.jpg"
+            img: "/img/espejo22.jpg"
         },
-        {id: "E11", 
-            nombre: "Espejo 11", 
+        {id: "E23", 
+            nombre: "Espejo 23", 
             descripcion: "Espejo de diseño con moldura", 
-            img: "/img/espejo11.jpg"
+            img: "/img/espejo23.jpg"
         },
-        { id: "E12",
-            nombre: "Espejo 12",
+        { id: "E24",
+            nombre: "Espejo 24",
             descripcion: "Espejo de diseño con melamina",
-            img: "/img/espejo12.jpg"
+            img: "/img/espejo24.jpg"
         },
 ];
 
-productosEspejosUno.forEach ((producto) => {
+productosEspejosDos.forEach ((producto) => {
     const contenedorProducto = document.createElement (`div`);
     contenedorProducto.className = `espejos`; //espejo
 
@@ -97,5 +96,3 @@ productosEspejosUno.forEach ((producto) => {
     listaDeProductos.appendChild(contenedorProducto);
 } )
 });
-
-
