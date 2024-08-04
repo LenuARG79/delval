@@ -77,7 +77,7 @@ let productosEspejosUno = [
 
 productosEspejosUno.forEach ((producto) => {
     const contenedorProducto = document.createElement (`div`);
-    contenedorProducto.className = `espejos`; //espejo
+    contenedorProducto.className = `espejos`; 
 
     const imagenProducto = document.createElement (`img`);
     imagenProducto.className = `imagenProducto`;
@@ -89,7 +89,7 @@ productosEspejosUno.forEach ((producto) => {
     contenedorH6.className = `contenedor-h6`;
     
     const h6 = document.createElement (`h6`);
-    h6.textContent = producto.nombre;
+    h6.textContent = producto.descripcion;
     
     contenedorH6.appendChild(h6);
     contenedorProducto.appendChild(contenedorH6);

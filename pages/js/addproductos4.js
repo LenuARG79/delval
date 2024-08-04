@@ -88,7 +88,7 @@ productosVanitorDos.forEach ((producto) => {
     contenedorH6.className = `contenedor-h6`;
     
     const h6 = document.createElement (`h6`);
-    h6.textContent = producto.nombre;
+    h6.textContent = producto.descripcion;
     
     contenedorH6.appendChild(h6);
     contenedorProducto.appendChild(contenedorH6);
