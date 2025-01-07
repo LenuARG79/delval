@@ -609,7 +609,19 @@ body {
   }
 }
 /*fin productos*/
+
+.iframe-contenedor {
+  display: flex;
+  justify-content: center;
+}
+
+.at-action-menu-trigger {
+  display: none !important;
+}
+
 /*espejos*/
+
+
 .bg-bordes3 {
   border-top: 1px solid #05B2DC;
   height: 1px;
