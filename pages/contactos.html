@@ -15,95 +15,110 @@
     <title>Del Val & Cia</title>
 </head>
 <body>
-    <a href="https://api.whatsapp.com/send?phone=+541136013910&text=Hola, bienvenido a Del Val, en breve seras atendido" target="_blank"><i class="fa-brands whatsapp-mobil fa-square-whatsapp"></i></a> 
-    <a href="https://web.whatsapp.com/send?phone=+541136013910&text=Hola, bienvenido a Del Val, en breve seras atendido" target="_blank"><i class="fa-brands  whatsapp-pc fa-square-whatsapp"></i></a>
-<header>
-    <div class="header">
+    <!--Whatsapp-->    
+    <i class="fa-brands fa-whatsapp fa-what"></i>
+    <header>
+        <!--Social Icon-->
         <div class="social-icon">
-            <a href="https://www.instagram.com/dv_muebles"><i class="fa-brands fa-square-facebook"></i></a>
-            <a href="https://www.facebook.com/dv_muesbles"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.instagram.com/dv_muebles"><i class="fa-brands fa-square-facebook fa-social-icon"></i></a>
+            <a href="https://www.facebook.com/dv_muesbles"><i class="fa-brands fa-square-instagram fa-social-icon"></i></a>
         </div>
-        <div class="bg-bordes1"></div>
-        <div class="background-menu">    
-        <div class="logo-header">
-            <a href="../index.html"><img src="../img/Logo-delval.png" width="100%" class="logo-index" alt="logo del val"></a>
-            <div class="btn-menu">
-                <label for="btn-menu" class="icon-menu">
-                    <i class="fa-solid fa-bars" id="bars-menu"></i>
-                    <p class="p-menu">Menú</p>
-                    </label>
-            </div>
-                <input type="checkbox" id="btn-menu">
-            <div class="container-menu">
-                <div class="cont-menu">
-                    <nav class="nav">
-                        <a href="../index.html" class="btn-slide">Inicio</a>
-                        <a href="../pages/nosotros.html" class="btn-slide">Nosotros</a>
-                        <a href="../pages/productos.html" class="btn-slide">Productos</a>
-                        <a href="contactos.html" class="btn-slide active-inicio-mobil">Contacto</a>
-                    </nav>
-                        <label for="btn-menu" class="icon-x">
-                        <i class="fa-solid fa-x"></i>
-                        </label>
+    
+        <!--Contenedor Logo + Menu-->
+        <div class="contenedor-logo-menu">
+            <a href="../index.html"><img class="logo-menu-mobil" src="/img/Logo-delval.png" alt="logo DelVal"></a> 
+            
+            <!--Menu Hamburguesa-->
+            <div class="menu-mobil">  
+                <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
                 </div>
-            </div> 
-            </div> 
-            <div class="bg-bordes2"></div>    
+            </div>
+            <!--Menu Mobil-->  
+            <nav id="menu">
+                <ul>
+                    <li><a href="../index.html" class="menu-link" onclick="closeMenu()">Inicio</a></li>
+                    <li><a href="nosotros.html" class="menu-link" onclick="closeMenu()">Nosotros</a></li>
+                    <li><a href="productos.html" class="menu-link" onclick="closeMenu()">Productos</a></li>
+                    <li><a href="contactos.html" class="menu-link active" onclick="closeMenu()">Contacto</a></li>
+                </ul>
+            </nav>    
         </div>
-        <div class="menu-pc2">
+        <!-- Fin Menu Hamburguesa-->
+        
+        <!--Menu PC-->
+        <!--Contenedor Logo + Menu PC-->
+        <div class="contenedor-logo-menu-pc">
+            <a href="../index.html"><img class="logo-menu-pc" src="/img/Logo-delval.png" alt="logo Del Val"></a>    
             <div class="menu-pc">
-                <nav>
-                    <a href="../index.html">Inicio</a>
-                    <a href="../pages/nosotros.html">Nosotros</a>
-                    <a href="../pages/productos.html">Productos</a>
-                    <a href="contactos.html" class="active-inicio-pc">Contacto</a>
-                </nav>
+                <ul>
+                    <li><a href="../index.html" class="menu-link" >Inicio</a></li>
+                    <li><a href="nosotros.html" class="menu-link">Nosotros</a></li>
+                    <li><a href="productos.html" class="menu-link">Productos</a></li>
+                    <li><a href="contactos.html" class="menu-link active">Contacto</a></li>
+                </ul>    
             </div>
         </div>
     </div>
 </header>
-<div class="hr-web hr-page">
-    <hr/>
-</div>
-<main>
-    <div class="productos">
-        <div><h2 class="titulos-pages">Contacto</h2></div>
-        <div class="bg-bordes3"></div>
-    </div>
-    <div class="info-contacto">
-      <div>
-        <a href="https://api.whatsapp.com/send?phone=+541136013910&text=Hola, bienvenido a Del Val, en breve seras atendido" target="_blank"><i class="fa-brands whatsapp-mobil-contacto fa-whatsapp"></i></a> 
-        <a href="https://web.whatsapp.com/send?phone=+541136013910&text=Hola, bienvenido a Del Val, en breve seras atendido" target="_blank"><i class="fa-brands  whatsapp-pc-contacto fa-whatsapp"></i></a>
-        <h5>Tel.:113 601-3910</h5>
-    </div>
-    <div class="mail">    
-        <a href="mailto:info@delval.com.ar?subject=Contacto%20desde%20la%20web" target="_blank"><i class="fa-regular fa-envelope"></i></a>
-        <h5>info@delval.com.ar</h5>
-    </div>
-    <div class="loc"><i class="fa-solid fa-location-dot"></i>
-        <h5 class="h5-loc">Caseros - Prov. de Bs. As.</h5>
-    </div>
-    <div class="iframe">
-        <a href="https://maps.app.goo.gl/MQYEZk9NW7kHh3sk8" target="_blank"></a><iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26270.218588227577!2d-58.58397705273897!3d-34.609791897382784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb8698cab7fa3%3A0xc4d83fe138c75b6f!2sCaseros%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1718219560525!5m2!1ses!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><a href="">
+        <!--Fin contenedor Logo + Menu-->
+
+        <!--Seccion Contacto-->
+<section class="contenedor-index-categorias">
+        <div class="contenedor-titulos">
+            <h2 class="titulos">Contacto</h2>
+        </div>
+       <div class="contenedor-contacto">
+       <div>
+       <div class="card-contacto">
+           <a href="https://wa.me/541136013910?text=Hola, bienvenido a Del Val, en breve serás atendido" target="_blank" class="whatsapp-contacto"><i class="fa-brands fa-whatsapp fa-contactos"></i></a>
+           <p class="p-contacto">Tel.:113 601-3910</p>
        </div>
-    </div>
-    <div class="hr-web"><hr/>
-    </div>
-</main>
+       <div class="card-contacto">    
+          <i class="fa-regular fa-envelope fa-contactos"></i>
+          <p class="p-contacto">info@delvalmuebles.com.ar</p>
+       </div>
+       <div class="card-contacto">
+          <i class="fa-solid fa-location-dot fa-contactos"></i>
+          <p class="p-contacto">Caseros - Prov. de Bs. As.</p>
+       </div>
+       </div>
+      <div class="card-contacto">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26270.21858820386!2d-58.583977012935925!3d-34.60979189745773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb8698cab7fa3%3A0xc4d83fe138c75b6f!2sCaseros%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1736539428642!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+</div>
+</section>    
+ <!--Linea-->
+ <div class="hr-web">
+    <hr/>
+  </div>
+  <!--Fin Linea-->
+
 <footer class="footer">
-    <a href="#" style="text-decoration: none; color: white;"><h3>Del Val ©2024.</h3></a>
+    <h3>Del Val ©2025.</h3>
     <h3>Caseros Prov. Bs. As.</h3>
-    <h3>info@delval.com.ar</h3>
+    <h3>info@delvalmuebles.com.ar</h3>
     <h3>Tel.: 113-601-3910</h3>
 </footer>
+<section class="container-impulsa">
+<p class="p-impulsa">Desarrollado por <a href="www.impulsa.net.ar" class="a-impulsa" target="_blank"><span class="impulsa">IMPULSA | MKT</span></a></p>
+</section>
+
+<!--Script-->
+<script src="/js/main.js"></script>
+<!-- Fin Script-->
+
 <!--Boostrap--> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
 </script>
 <!--Boostrap fin-->
+
 <!--Font awesome-->
 <script src="https://kit.fontawesome.com/23f35d7867.js" crossorigin="anonymous"></script>
 <!--Font awesome fin-->
+
 </body>
 </html>
-

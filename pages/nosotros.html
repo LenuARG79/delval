@@ -15,86 +15,101 @@
     <title>Del Val & Cia</title>
 </head>
 <body>
-    <a href="https://api.whatsapp.com/send?phone=+541136013910&text=Hola, bienvenido a Del Val, en breve seras atendido" target="_blank"><i class="fa-brands whatsapp-mobil fa-square-whatsapp"></i></a> 
-    <a href="https://web.whatsapp.com/send?phone=+541136013910&text=Hola, bienvenido a Del Val, en breve seras atendido" target="_blank"><i class="fa-brands  whatsapp-pc fa-square-whatsapp"></i></a>
+     <!--Whatsapp-->    
+        <i class="fa-brands fa-whatsapp fa-what"></i>
 <header>
-    <div class="header">
-        <div class="social-icon">
-            <a href="https://www.instagram.com/dv_muebles"><i class="fa-brands fa-square-facebook"></i></a>
-            <a href="https://www.facebook.com/dv_muesbles"><i class="fa-brands fa-square-instagram"></i></a>
-        </div>
-        <div class="bg-bordes1"></div>
-        <div class="background-menu">    
-        <div class="logo-header">
-            <a href="../index.html"><img src="../img/Logo-delval.png" width="100%" class="logo-index" alt="logo del val"></a>
-            <div class="btn-menu">
-                <label for="btn-menu" class="icon-menu">
-                    <i class="fa-solid fa-bars" id="bars-menu"></i>
-                    <p class="p-menu">Menú</p>
-                    </label>
+    <!--Social Icon-->
+    <div class="social-icon">
+        <a href="https://www.instagram.com/dv_muebles"><i class="fa-brands fa-square-facebook fa-social-icon"></i></a>
+        <a href="https://www.facebook.com/dv_muesbles"><i class="fa-brands fa-square-instagram fa-social-icon"></i></a>
+    </div>
+
+    <!--Contenedor Logo + Menu-->
+    <div class="contenedor-logo-menu">
+        <a href="../index.html"><img class="logo-menu-mobil" src="/img/Logo-delval.png" alt="logo DelVal"></a> 
+        
+        <!--Menu Hamburguesa-->
+        <div class="menu-mobil">  
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
             </div>
-                <input type="checkbox" id="btn-menu">
-            <div class="container-menu">
-                <div class="cont-menu">
-                    <nav class="nav">
-                        <a href="../index.html" class="btn-slide">Inicio</a>
-                        <a href="nosotros.html" class="btn-slide active-inicio-mobil">Nosotros</a>
-                        <a href="../pages/productos.html" class="btn-slide">Productos</a>
-                        <a href="../pages/contactos.html" class="btn-slide">Contacto</a>
-                    </nav>
-                        <label for="btn-menu" class="icon-x">
-                        <i class="fa-solid fa-x"></i>
-                        </label>
-                </div>
-            </div> 
-            </div> 
-            <div class="bg-bordes2"></div>    
         </div>
-        <div class="menu-pc2">
-            <div class="menu-pc">
-                <nav>
-                    <a href="../index.html">Inicio</a>
-                    <a href="nosotros.html" class="active-inicio-pc">Nosotros</a>
-                    <a href="../pages/productos.html">Productos</a>
-                    <a href="../pages/contactos.html">Contacto</a>
-                </nav>
-            </div>
+        <!--Menu Mobil-->  
+        <nav id="menu">
+            <ul>
+                <li><a href="../index.html" class="menu-link" onclick="closeMenu()">Inicio</a></li>
+                <li><a href="nosotros.html" class="menu-link active" onclick="closeMenu()">Nosotros</a></li>
+                <li><a href="productos.html" class="menu-link" onclick="closeMenu()">Productos</a></li>
+                <li><a href="contactos.html" class="menu-link" onclick="closeMenu()">Contacto</a></li>
+            </ul>
+        </nav>    
+    </div>
+    <!-- Fin Menu Hamburguesa-->
+    
+    <!--Menu PC-->
+    <!--Contenedor Logo + Menu PC-->
+    <div class="contenedor-logo-menu-pc">
+        <a href="../index.html"><img class="logo-menu-pc" src="/img/Logo-delval.png" alt="logo Del Val"></a>    
+        <div class="menu-pc">
+            <ul>
+                <li><a href="../index.html" class="menu-link" >Inicio</a></li>
+                <li><a href="nosotros.html" class="menu-link active">Nosotros</a></li>
+                <li><a href="productos.html" class="menu-link">Productos</a></li>
+                <li><a href="contactos.html" class="menu-link">Contacto</a></li>
+            </ul>    
         </div>
     </div>
-</header>
-<div class="hr-web hr-page">
-    <hr/>
 </div>
-<main>
-    <div class="main">
-        <div><h2 class="titulos-pages">Nosotros</h2></div>
+</header>
+    <!--Fin contenedor Logo + Menu-->
+ 
+<!--Seccion Nosotros-->
+<section class="contenedor-index-categorias">
+    <div class="contenedor-titulos">
+        <h2 class="titulos">Nosotros</h2>
     </div>
-    <div>
-        <p class="p-texto">
+    <div class="contenedor-nosotros">
+        <div class="card-nosotros">
+        <p class="p-texto-nosotros">
             En 1947 Don Jose Del Val (Yusepe para los amigos) fabricó y vendió su primer espejo y vanitory. <br>
             Los mismos estaban realizados a mano con disños únicos y exclusiovos. <br><br>
             Nacido en Italia, aprendió de su padre el oficio de evanista. Con toda su sabidura y un país (en ese entonces) muy prospero fundó Del Val & cia. <br>
             En 1968 crea su primer podrucción en serie y desde entonces, hijos y nietos, no pararon de trabajar. <br><br>
             En la actualidad Del Val & cia cuenta con una planta propia de produción lo que permite llegar a todo el país con productos de calidad y diseño.
-
         </p>
-    </div>
-    <div class="hr-web"><hr/></div>
-    <div class="contenido"></div>
-</main>
+        </div>
+</section>
+ <!--Linea-->
+ <div class="hr-web">
+    <hr/>
+  </div>
+  <!--Fin Linea-->
+
 <footer class="footer">
-    <h3>Del Val ©2024.</h3>
+    <h3>Del Val ©2025.</h3>
     <h3>Caseros Prov. Bs. As.</h3>
-    <h3>info@delval.com.ar</h3>
+    <h3>info@delvalmuebles.com.ar</h3>
     <h3>Tel.: 113-601-3910</h3>
 </footer>
+<section class="container-impulsa">
+<p class="p-impulsa">Desarrollado por <a href="www.impulsa.net.ar" class="a-impulsa" target="_blank"><span class="impulsa">IMPULSA | MKT</span></a></p>
+</section>
+
+<!--Script-->
+<script src="/js/main.js"></script>
+<!-- Fin Script-->
+
 <!--Boostrap--> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
 </script>
 <!--Boostrap fin-->
+
 <!--Font awesome-->
 <script src="https://kit.fontawesome.com/23f35d7867.js" crossorigin="anonymous"></script>
 <!--Font awesome fin-->
+
 </body>
 </html>

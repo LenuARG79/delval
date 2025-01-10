@@ -15,97 +15,120 @@
     <title>Del Val & Cia</title>
 </head>
 <body>
-    <a href="https://api.whatsapp.com/send?phone=+541136013910&text=Hola, bienvenido a Del Val, en breve seras atendido" target="_blank"><i class="fa-brands whatsapp-mobil fa-square-whatsapp"></i></a> 
-    <a href="https://web.whatsapp.com/send?phone=+541136013910&text=Hola, bienvenido a Del Val, en breve seras atendido" target="_blank"><i class="fa-brands  whatsapp-pc fa-square-whatsapp"></i></a>
-<header>
-    <div class="header">
-        <div class="social-icon">
-            <a href="https://www.instagram.com/dv_muebles"><i class="fa-brands fa-square-facebook"></i></a>
-            <a href="https://www.facebook.com/dv_muesbles"><i class="fa-brands fa-square-instagram"></i></a>
-        </div>
-        <div class="bg-bordes1"></div>
-        <div class="background-menu">    
-        <div class="logo-header">
-            <a href="../index.html"><img src="../img/Logo-delval.png" width="100%" class="logo-index" alt="logo del val"></a>
-            <div class="btn-menu">
-                <label for="btn-menu" class="icon-menu">
-                    <i class="fa-solid fa-bars" id="bars-menu"></i>
-                    <p class="p-menu">Menú</p>
-                    </label>
-            </div>
-                <input type="checkbox" id="btn-menu">
-            <div class="container-menu">
-                <div class="cont-menu">
-                    <nav class="nav">
-                        <a href="../index.html" class="btn-slide">Inicio</a>
-                        <a href="../pages/nosotros.html" class="btn-slide">Nosotros</a>
-                        <a href="productos.html" class="btn-slide active-inicio-mobil">Productos</a>
-                        <a href="../pages/contactos.html" class="btn-slide">Contacto</a>
-                    </nav>
-                        <label for="btn-menu" class="icon-x">
-                        <i class="fa-solid fa-x"></i>
-                        </label>
-                </div>
-            </div> 
-            </div> 
-            <div class="bg-bordes2"></div>    
-        </div>
-        <div class="menu-pc2">
-            <div class="menu-pc">
-                <nav>
-                    <a href="../index.html">Inicio</a>
-                    <a href="../pages/nosotros.html">Nosotros</a>
-                    <a href="productos.html" class="active-inicio-pc">Productos</a>
-                    <a href="../pages/contactos.html">Contacto</a>
-                </nav>
-            </div>
-        </div>
-    </div>
+   <!--Whatsapp-->    
+   <i class="fa-brands fa-whatsapp fa-what"></i>
+   <header>
+       <!--Social Icon-->
+       <div class="social-icon">
+           <a href="https://www.instagram.com/dv_muebles"><i class="fa-brands fa-square-facebook fa-social-icon"></i></a>
+           <a href="https://www.facebook.com/dv_muesbles"><i class="fa-brands fa-square-instagram fa-social-icon"></i></a>
+       </div>
+   
+       <!--Contenedor Logo + Menu-->
+       <div class="contenedor-logo-menu">
+           <a href="../index.html"><img class="logo-menu-mobil" src="/img/Logo-delval.png" alt="logo DelVal"></a> 
+           
+           <!--Menu Hamburguesa-->
+           <div class="menu-mobil">  
+               <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+               <div class="line"></div>
+               <div class="line"></div>
+               <div class="line"></div>
+               </div>
+           </div>
+           <!--Menu Mobil-->  
+           <nav id="menu">
+               <ul>
+                   <li><a href="../index.html" class="menu-link" onclick="closeMenu()">Inicio</a></li>
+                   <li><a href="nosotros.html" class="menu-link" onclick="closeMenu()">Nosotros</a></li>
+                   <li><a href="productos.html" class="menu-link active" onclick="closeMenu()">Productos</a></li>
+                   <li><a href="contactos.html" class="menu-link" onclick="closeMenu()">Contacto</a></li>
+               </ul>
+           </nav>    
+       </div>
+       <!-- Fin Menu Hamburguesa-->
+       
+       <!--Menu PC-->
+       <!--Contenedor Logo + Menu PC-->
+       <div class="contenedor-logo-menu-pc">
+           <a href="../index.html"><img class="logo-menu-pc" src="/img/Logo-delval.png" alt="logo Del Val"></a>    
+           <div class="menu-pc">
+               <ul>
+                   <li><a href="../index.html" class="menu-link" >Inicio</a></li>
+                   <li><a href="nosotros.html" class="menu-link">Nosotros</a></li>
+                   <li><a href="productos.html" class="menu-link active">Productos</a></li>
+                   <li><a href="contactos.html" class="menu-link ">Contacto</a></li>
+               </ul>    
+           </div>
+       </div>
+   </div>
 </header>
-<div class="hr-web hr-page">
-    <hr/>
-</div>
-<section>
-    <div class="productos">
- <div><h2 class="titulos-pages">Categorias</h2></div>
- </div>   
- <div class="categorias-productos">
-    <div class="card-productos">
-        <i class="fa-regular fa-square fa-shake fa-main-productos"></i>
-        <h3 class="card-h3-productos">&nbspNuestros espejos&nbsp</h3>
-        <a href="../pages/espejos.html" class="btn-card-productos">ver mas</a>
+       <!--Fin contenedor Logo + Menu-->
+<!--Seccion Index Categoria-->
+<section class="contenedor-index-categorias">
+    <div class="contenedor-titulos">
+        <h2 class="titulos">Categorias</h2>
     </div>
-    <div class="card-productos">
-        <i class="fa-solid fa-sink fa-shake fa-main-productos"></i>
-        <h3 class="card-h3-productos">Nuestros vanitorys</h3>
-        <a href="../pages/vanitorys.html" class="btn-card-productos">ver mas</a>
+    <div class="contendedor-categorias">
+        <div class="contenedor-card-categorias">
+           <div class="card-categorias">
+               <i class="fa-regular fa-square fa-categorias"></i>
+               <h3 class="card-h3">Nuestros espejos</h3>
+               <a href="espejos.html" class="btn-card">ver mas</a>
+           </div>
+           <div class="card-categorias">
+               <i class="fa-solid fa-sink fa-categorias"></i>
+               <h3 class="card-h3">Nuestros vanitorys</h3>
+               <a href="vanitorys.html" class="btn-card">ver mas</a>
+           </div>
+        </div>
     </div>
-</div>
-</section>
-<div class="hr-web">
+    <br>
+    <br>
+  <!--Linea-->
+  <div class="hr-web">
     <hr/>
- </div>
- <div class="contenido-productos">
-    <p>En esta sección encontraras todos nuestros productos. <br><br>
-       Los mismos estan diseñados y fabricados bajo medidas estandar. <br><br>
-       En caso de necesitar una medida especifica podemos fabricarlo.</p>
- </div>
+  </div>
+  <!--Fin Linea-->
+   <br> 
+  <div class="contenido-productos">
+        <p>En esta sección encontraras todos nuestros productos. <br><br>
+           Los mismos estan diseñados y fabricados bajo medidas estandar. <br><br>
+           En caso de necesitar una medida especifica podemos fabricarlo.</p>
+     </div>  
+</section>   
+
+<!--Fin Seccion Index Categoria--> 
+
+ <!--Linea-->
  <div class="hr-web">
-   <hr/>
- </div>
+    <hr/>
+  </div>
+  <!--Fin Linea-->
+
 <footer class="footer">
-    <h3>Del Val ©2024.</h3>
+    <h3>Del Val ©2025.</h3>
     <h3>Caseros Prov. Bs. As.</h3>
-    <h3>info@delval.com.ar</h3>
+    <h3>info@delvalmuebles.com.ar</h3>
     <h3>Tel.: 113-601-3910</h3>
 </footer>
+<section class="container-impulsa">
+<p class="p-impulsa">Desarrollado por <a href="www.impulsa.net.ar" class="a-impulsa" target="_blank"><span class="impulsa">IMPULSA | MKT</span></a></p>
+</section>
+
+<!--Script-->
+<script src="/js/main.js"></script>
+<!-- Fin Script-->
+
 <!--Boostrap--> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
 </script>
 <!--Boostrap fin-->
+
 <!--Font awesome-->
 <script src="https://kit.fontawesome.com/23f35d7867.js" crossorigin="anonymous"></script>
 <!--Font awesome fin-->
+
 </body>
 </html>
