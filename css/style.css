@@ -460,6 +460,10 @@ footer {
   margin-bottom: 1rem;
 }
 
+.iframe-catalogo {
+  margin: 0.5rem;
+}
+
 /* Fin Productos */
 
 
@@ -511,5 +515,4 @@ footer {
     width: 100%;
     height: 300px;
   }
-
 }
